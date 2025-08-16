@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "shabnam";
+    src: url("../font/Shabnam-Bold-FD.woff2") format("woff2"),
+        url("../font/Shabnam-Bold-FD.woff") format("woff"),
+        url("../font/Shabnam-Bold-FD.ttf") format("truetype"),
+        url("../font/Shabnam-Bold-FD.eot") format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "cinema";
+    src: url("../font/Cinema\ Full.ttf");
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "shabnam";
+    cursor: default;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input {
+    font-family: "shabnam" !important;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    font-family: "yekan";
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+
+$transision-esein-out: all 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+$box-shadow-soft: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+
+$box-shadow-red : 0 3px 8px color-mix(in srgb, #e83a3a 65%, transparent);
+
+$color-skyblue: #D4EBF8;
+$color-blue: #1F509A;
+$color-bluedark: #2E5077;
+$color-red: #F72C5B;
+$color-secendary: #384B70;
+$color-gray: #f2f2f2;
+$color-success: #009990;
+$color-gold: #FAB12F;
+$color-gradient-red : radial-gradient(circle, rgba(247, 44, 91, 1) 0%, rgba(150, 29, 53, 1) 100%);
