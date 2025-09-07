@@ -611,6 +611,8 @@
     padding: 10px;
     box-shadow: $box-shadow-soft;
     margin: 0px 5px;
+    transition: $transision-esein-out;
+
 
     .card-thumnail {
         img {
@@ -667,13 +669,14 @@
                         box-shadow: $box-shadow-red;
                     }
 
-                    &:hover svg path{
+                    &:hover svg path {
                         fill: $color-red;
                     }
 
-                    svg{
+                    svg {
                         width: 22px;
-                        path{
+
+                        path {
                             transition: $transision-esein-out;
                             fill: #333;
                         }
@@ -721,12 +724,13 @@
 /* Start product-slider */
 
 .title-pro {
+    margin: 15px 0px;
     padding: 20px 0px;
 
     h4 {
         font-size: 18px;
         position: relative;
-        width: 250px;
+        display: inline-block;
 
         &::after {
             position: absolute;
@@ -741,7 +745,7 @@
         &::before {
             position: absolute;
             content: '';
-            left: 80px;
+            left: 50%;
             right: 0px;
             top: 35px;
             height: 8px;
@@ -761,6 +765,139 @@
 
 /* End product-slider */
 
+
+
+
+/* Start Mini Slider */
+.mini-slider {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 440px;
+        border-radius: 10px;
+    }
+}
+
+/* End Mini Slider */
+
+
+/* Start Double Slider */
+.duble-slider {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        border-radius: 10px;
+        width: 640px;
+    }
+}
+
+/* End Double Slider */
+
+
+/* Start Details */
+.details {
+    margin: 20px 0px;
+    background-color: $color-red;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-around;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h4 {
+            color: #fff;
+        }
+
+        p {
+            color: #ffffffa3;
+            font-size: 12px;
+        }
+    }
+
+    img {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+/* End Details */
+
+
+/* Start Article */
+
+.sec-articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article {
+    margin: 30px 0px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border-radius: 18px;
+    padding: 12px;
+    transition: $transision-esein-out;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.242);
+    }
+
+    &:hover .article-thumnail img {
+        transform: scale(1.08)
+    }
+
+    .article-thumnail {
+        text-align: center;
+
+        img {
+            transition: $transision-esein-out;
+            width: 270px;
+            border-radius: 18px;
+        }
+    }
+
+    .article-title {
+        margin: 14px 0px;
+
+        a {
+            color: #333;
+
+            h2 {
+                font-size: 16px;
+
+            }
+        }
+
+    }
+
+    .article-detail {
+        margin-top: 12px;
+        background-color: #ededed;
+        border-radius: 20px;
+        padding: 7px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            color: #444;
+            font-size: 13px;
+        }
+    }
+
+}
+
+/* End Article */
 
 
 /* Start Footer */
@@ -999,12 +1136,12 @@ footer {
                     }
 
 
-                    &:hover svg path{
+                    &:hover svg path {
                         fill: $color-gold;
                     }
 
 
-                     svg {
+                    svg {
                         width: 30px;
                         margin-left: 10px;
 
