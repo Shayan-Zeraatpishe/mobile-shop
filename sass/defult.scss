@@ -93,13 +93,15 @@ input {
 $transision-esein-out: all 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
 $box-shadow-soft: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
 
+$box-shadow-hard : -3px 6px 10px rgba(2, 25, 89, 0.19);
+
 $box-shadow-red : 0 3px 8px color-mix(in srgb, #e83a3a 65%, transparent);
 
 $color-skyblue: #D4EBF8;
 $color-blue: #1F509A;
 $color-bluedark: #2E5077;
 $color-red: #F72C5B;
-$color-secendary: #384B70;
+$color-secendary: #657087;
 $color-gray: #f2f2f2;
 $color-success: #009990;
 $color-gold: #FAB12F;
