@@ -1,7 +1,5 @@
 @import "defult.scss";
 
-
-
 /* Start floating-button */
 .floating-button {
     z-index: 999;
@@ -23,7 +21,6 @@
         width: 32px;
     }
 }
-
 /* End floating-button */
 
 
@@ -216,14 +213,9 @@
             background-color: $color-red;
             box-shadow: $box-shadow-red;
         }
-
-
-
-
     }
 
     .mega-menu {
-
 
         .button-menu {
             display: flex;
@@ -248,8 +240,6 @@
                 width: 1px;
                 background-color: #aaaaaa;
             }
-
-
         }
 
         .button-menu:hover+.container-sub-menu {
@@ -260,13 +250,10 @@
         }
 
         .container-sub-menu:hover {
-
             visibility: visible;
             opacity: 1;
             transform: translateY(0px);
         }
-
-
 
         .container-sub-menu {
             z-index: 99;
@@ -282,7 +269,6 @@
             padding: 14px 0px;
         }
 
-
         .sub-menu {
             position: absolute;
             content: '';
@@ -292,8 +278,6 @@
             height: 300px;
             padding: 0px 7px;
             border-radius: 0px 7px 7px 0px;
-
-
 
             .sub-mega-menu {
                 height: 300px;
@@ -326,7 +310,6 @@
 
     .menu-header {
         margin-right: 20px;
-
 
         ul>li {
             display: flex;
@@ -445,9 +428,6 @@
 
 
 
-
-
-
 /* Start Slider */
 
 .swiper {
@@ -474,7 +454,6 @@
 .swiper-pagination-bullet-active {
     background: #fff !important;
 }
-
 
 .swiper-slide img {
     display: block;
@@ -534,8 +513,6 @@
 }
 
 /* End elementor-widget-container */
-
-
 
 /* Start Discount */
 
