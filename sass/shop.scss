@@ -1,5 +1,9 @@
 @import "defult.scss";
 
+body{
+    background-color: #f8f9fb;
+}
+
 .breadcrumb-Container {
     margin: 30px 0px;
     font-size: 14px;
@@ -19,7 +23,6 @@
 
 .sec-right {
     width: 20%;
-    //  background-color: red;
 }
 
 .sec-left {
@@ -27,12 +30,14 @@
     margin-right: 20px;
 }
 
+
 .before-shop {
     box-shadow: $box-shadow-hard;
     border-radius: 7px;
     padding: 14px 10px;
     display: flex;
     align-items: center;
+    background-color: #fff;
 
     svg {
         width: 30px;
@@ -218,6 +223,7 @@ hr {
     box-shadow: $box-shadow-hard;
     padding: 20px 10px;
     border-radius: 10px;
+    background-color: #fff;
 }
 
 /* Start Progress Bar  */
@@ -275,17 +281,18 @@ input[type=range]::-webkit-slider-thumb {
     display: block;
     width: 100%;
     padding: 10px;
-    background: $color-red;
+    background-color: $color-red;
     color: #fff;
     font-size: 15px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-family: "shabnam";
+    transition: $transision-esein-out;
 }
 
 .btn:hover {
-    background: $color-red;
+    background-color: #ad1e3f;
 }
 
 /* End Progress Bar  */
@@ -296,6 +303,7 @@ input[type=range]::-webkit-slider-thumb {
     padding: 20px 10px;
     border-radius: 10px;
     margin-top: 30px;
+    background-color: #fff;
 
     select {
         display: flex;
