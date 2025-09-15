@@ -1,0 +1,314 @@
+@import "defult.scss";
+
+.breadcrumb-Container {
+    margin: 30px 0px;
+    font-size: 14px;
+
+    .breadcrumb {
+        a {
+            color: $color-red;
+        }
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    display: flex;
+}
+
+
+.sec-right {
+    width: 20%;
+    //  background-color: red;
+}
+
+.sec-left {
+    width: 80%;
+    margin-right: 20px;
+}
+
+.before-shop {
+    box-shadow: $box-shadow-hard;
+    border-radius: 7px;
+    padding: 14px 10px;
+    display: flex;
+    align-items: center;
+
+    svg {
+        width: 30px;
+        margin-left: 10px;
+    }
+
+    .order-by {
+        display: flex;
+        align-items: center;
+
+        p {
+            font-size: 14px;
+            color: rgb(68, 68, 68);
+        }
+
+        a {
+            font-size: 14px;
+            color: #444;
+            transition: $transision-esein-out;
+            padding: 5px 10px;
+            margin: 0px 10px;
+
+            &:hover {
+                color: $color-red;
+            }
+        }
+    }
+}
+
+
+
+.container-card {
+    margin-top: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Start Card */
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 240px;
+    height: 320px;
+    padding: 10px;
+    box-shadow: $box-shadow-soft;
+    margin: 20px 10px;
+    transition: $transision-esein-out;
+
+    &:hover {
+        background-color: #eeeded;
+    }
+
+    .card-thumnail {
+        text-align: center;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .card-body {
+        position: relative;
+        height: 90px;
+
+        .card-title {
+            padding: 10px 0px;
+
+            a {
+                color: #333;
+
+                h2 {
+                    font-size: 15px;
+                    transition: $transision-esein-out;
+
+                    &:hover {
+                        color: $color-red;
+                    }
+                }
+            }
+        }
+
+        .card-buttons {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+
+            .btns {
+                display: flex;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px;
+                    height: 30px;
+                    box-shadow: $box-shadow-soft;
+                    border-radius: 10px;
+                    margin: 0px 4px;
+                    color: #333;
+                    transition: $transision-esein-out;
+
+                    &:hover {
+                        box-shadow: $box-shadow-red;
+                    }
+
+                    &:hover svg path {
+                        fill: $color-red;
+                    }
+
+                    svg {
+                        width: 22px;
+
+                        path {
+                            transition: $transision-esein-out;
+                            fill: #333;
+                        }
+                    }
+                }
+            }
+
+            .amount-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 13px;
+                margin-left: 5px;
+
+                .discount-lable {
+                    color: #555;
+                    position: relative;
+                    margin: -5px 0px;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        left: 0px;
+                        right: 0px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-color: $color-red;
+                        height: 1px;
+                    }
+                }
+
+                .lable {
+                    color: #222;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .Not-available{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color:rgb(255, 80, 80);
+            color: #fff;
+            padding: 10px 0px;
+            border-radius: 7px;
+        }
+    }
+}
+
+/* End Card */
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+.sec-amount {
+    box-shadow: $box-shadow-hard;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+/* Start Progress Bar  */
+.filter-box {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    direction: rtl;
+}
+
+.filter-box h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.slider-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    pointer-events: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: $color-red;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: all;
+    position: relative;
+    z-index: 2;
+}
+
+.price-values {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 20px;
+    font-size: 14px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: $color-red;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "shabnam";
+}
+
+.btn:hover {
+    background: $color-red;
+}
+
+/* End Progress Bar  */
+
+
+.sec-color {
+    box-shadow: $box-shadow-hard;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+
+    select {
+        display: flex;
+        width: 100%;
+        padding: 10px 10px;
+        border-radius: 7px;
+        outline: none;
+        font-family: "shabnam";
+        border-color: #444;
+        transition: $transision-esein-out;
+        
+        &:focus{
+            border-color: $color-red;
+        }
+    }
+}
