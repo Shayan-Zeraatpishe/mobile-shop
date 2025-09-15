@@ -1,5 +1,6 @@
 @import "defult.scss";
 
+/* Start Link Pages */
 .breadcrumb-Container {
     margin: 30px 0px;
     font-size: 14px;
@@ -10,7 +11,9 @@
         }
     }
 }
+/* End Link Pages */
 
+/* Start Details Product */
 .product-1 {
     display: flex;
 }
@@ -23,6 +26,7 @@
     border-radius: 14px;
 }
 
+/* Start Gallery Images Product */
 .container-img {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
@@ -31,12 +35,10 @@
 
 .gallery-preview {
     width: 280px;
-    /* اندازه دلخواه */
     height: 320px;
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .slider-track {
@@ -103,6 +105,7 @@
     font-size: 40px;
     cursor: pointer;
 }
+/* End Gallery Images Product */
 
 hr {
     border: none;
@@ -111,7 +114,7 @@ hr {
     margin: 10px 0px;
 }
 
-
+/* Start Mini Details Product */
 .body-product {
     margin-top: 10px;
     margin-right: 40px;
@@ -185,6 +188,8 @@ hr {
         }
     }
 }
+/* End Mini Details Product */
+/* End Details Product */
 
 
 .sec-left {
@@ -206,6 +211,7 @@ hr {
         }
     }
 
+    /* Start Select Color  */
     .color {
         margin: 14px 0px;
 
@@ -221,17 +227,16 @@ hr {
             }
         }
     }
+    /* End Select Color  */
 
+    /* Start Pay Product */
     .btn-pay {
         display: flex;
         width: 100%;
         align-items: center;
-
         margin: 14px 0px;
-        // background-color: red;
 
         .count {
-
             width: 40%;
             display: flex;
             align-items: center;
@@ -285,7 +290,9 @@ hr {
             }
         }
     }
+    /* End Pay Product */
 
+    /* Start Amount Product */
     .amount {
         display: flex;
         align-items: center;
@@ -299,14 +306,14 @@ hr {
             margin: 0px 5px;
         }
     }
+    /* End Amount Product */
 }
-
 
 .container-fluid {
     margin-top: 40px;
-
 }
 
+/* Start BTNs Description */
 .row {
     .tab-menu {
 
@@ -330,7 +337,6 @@ hr {
                 &:hover {
                     background-color: #881732;
                 }
-
             }
         }
     }
@@ -339,7 +345,9 @@ hr {
 .active-btn {
     background-color: #881732 !important;
 }
+/* End BTNs Description */
 
+/* Start Description */
 .container-description {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -373,10 +381,9 @@ hr {
         }
     }
 }
-
+/* End Description */
 
 /* Start Section Full Description */
-
 .container-full-description {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -568,7 +575,6 @@ hr {
         }
     }
 
-
     .col-4 {
         margin: 20px 0px;
         padding: 20px;
@@ -612,7 +618,6 @@ hr {
     opacity: 1;
     transform: translateY(0px);
 }
-
 /* End Active Section */
 
 /* Start product-slider */
@@ -655,7 +660,6 @@ hr {
         display: flex;
     }
 }
-
 /* End product-slider */
 
 
@@ -773,5 +777,4 @@ hr {
         }
     }
 }
-
 /* End Card */

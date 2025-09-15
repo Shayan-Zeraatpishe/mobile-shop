@@ -1,0 +1,134 @@
+@import "defult.scss";
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container-contact {
+    display: flex;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: $box-shadow-soft;
+    //  background-color: red;
+    height: 400px;
+}
+
+.sec-right {
+    h4 {
+        color: $color-red;
+        margin-bottom: 14px;
+    }
+
+    h1 {
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 45px;
+        color: #666;
+        font-size: 14px;
+    }
+
+    .cotact-option {
+        div {
+            display: flex;
+            box-shadow: $box-shadow-soft;
+            width: 220px;
+            height: 40px;
+            border-radius: 5px;
+            padding: 0px 20px;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0px;
+            font-size: 16px;
+
+            svg {
+                width: 25px;
+            }
+        }
+    }
+}
+
+.sec-left {
+    margin-right: 70px;
+
+    .box-contact {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #e8e8e8;
+        padding: 0px 30px;
+        border-radius: 10px;
+
+        input {
+            display: flex;
+            width: 250px;
+            height: 40px;
+            border-radius: 7px;
+            padding: 0px 14px;
+            border: 2px solid #506080;
+            transition: $transision-esein-out;
+            margin: 10px 0px;
+
+            &:focus {
+                border: 2px solid $color-red;
+            }
+        }
+
+        textarea {
+            height: 100px;
+            min-height: 100px;
+            max-height: 100px;
+            min-width: 250px;
+            max-width: 250px;
+            border-radius: 7px;
+            font-family: "shabnam";
+            padding: 10px 14px;
+            border: none;
+            outline: none;
+            border: 2px solid #506080;
+            transition: $transision-esein-out;
+            margin: 10px 0px;
+
+            &:focus {
+                border: 2px solid $color-red;
+            }
+        }
+
+        button {
+            width: 250px;
+            height: 40px;
+            background-color: $color-red;
+            color: #fff;
+            border: none;
+            border-radius: 7px;
+            font-family: "shabnam";
+            transition: $transision-esein-out;
+            margin: 10px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                opacity: 0;
+                width: 20px;
+                transform: translateX(10px);
+                transition: $transision-esein-out;
+            }
+
+
+            &:hover {
+                background-color: #b72043;
+                svg{
+                    opacity: 1;
+                    transform: translateX(-10px);
+                }
+            }
+        }
+    }
+}

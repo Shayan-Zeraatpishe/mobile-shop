@@ -14,13 +14,14 @@ let rowcomments = document.getElementById('row3');
     rowdesctiption.style.display = "block";
 })();
 
-
+/* Function Style Btn */
 function stbtn(btn1, btn2, btn3) {
     btn1.classList.add("active-btn");
     btn2.classList.remove("active-btn");
     btn3.classList.remove("active-btn");
 }
 
+/* Function Style Section */
 function sttime(el, el2, el3) {
     el.style.display = "block";
 
