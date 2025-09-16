@@ -1,0 +1,212 @@
+@import "defult.scss";
+
+.Steps {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    .box {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 40px;
+
+        .img {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-bottom: 10px;
+
+            svg {
+                width: 30px;
+            }
+        }
+
+        .arrow-left {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 200px;
+                height: 5px;
+                background-color: #eee;
+                right: 0px;
+                z-index: -1;
+            }
+        }
+
+        .red {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 200px;
+                height: 5px;
+                background-color: $color-red;
+                right: 0px;
+                z-index: -1;
+            }
+        }
+
+
+        .tick {
+            background-color: $color-red;
+        }
+
+        .not-tick {
+            background-color: #eee;
+        }
+
+        span {
+            color: #222;
+            font-size: 13px;
+        }
+    }
+}
+
+
+.container-fluid {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+
+.sec-right {
+    width: 75%;
+    margin-left: 20px;
+    box-shadow: $box-shadow-hard;
+    padding: 20px;
+    border-radius: 10px;
+
+    header {
+        color: #222;
+        margin-bottom: 20px;
+    }
+}
+
+
+.sec-input {
+    display: flex;
+    margin: 20px 0px;
+
+    //   justify-content: space-between;
+    .input-right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .input-left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        //  background-color: red;
+    }
+
+    input {
+        display: flex;
+        height: 40px;
+        padding: 10px 10px;
+        outline: none;
+        border-radius: 7px;
+        border: 2px solid $color-bluedark;
+        margin: 0px 10px;
+        transition: $transision-esein-out;
+        background-color: #f6f5f5;
+        color: #222;
+
+        &:focus {
+            border: 2px solid #a51d3c;
+        }
+    }
+
+    label {
+        margin-right: 10px;
+        font-size: 14px;
+        margin-bottom: 3px;
+        color: #222;
+    }
+
+    span{
+        padding: 4px;
+        margin-right: 10px;
+        height: 22px;
+        font-size: 13px;
+        color: #a51d3c;
+    }
+}
+
+
+.sec-left {
+    width: 25%;
+}
+
+.box-pay {
+    box-shadow: $box-shadow-hard;
+    padding: 20px;
+    border-radius: 10px;
+
+    header{
+        color: #222;
+        margin: 10px 0px;
+    }
+
+    .body{
+        margin: 20px 0px;
+        background-color: #eee;
+        padding: 10px;
+        position: relative;
+        p{
+            color: #333;
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        &::after{
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-color: #eee;
+            right: 15px;
+            top: -10px;
+            transform: rotate(45deg);
+            z-index: -1;
+        }
+
+    }
+
+    .btn-pay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        background-color: $color-red;
+        color: #fff;
+        font-family: "shabnam";
+        font-size: 15px;
+        transition: $transision-esein-out;
+
+        &:hover {
+            background-color: #a51d3c;
+        }
+    }
+
+}

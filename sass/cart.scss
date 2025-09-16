@@ -1,0 +1,300 @@
+@import "defult.scss";
+
+.Steps {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    .box {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 40px;
+
+        .img {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        
+            svg {
+                width: 30px;
+            }
+        }
+
+        .arrow-left {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                width: 200px;
+                height: 5px;
+                background-color: #eee;
+                right: 0px;
+                z-index: -1;
+            }
+        }
+
+        .tick {
+            background-color: $color-red;
+        }
+
+        .not-tick {
+            background-color: #eee;
+        }
+
+        span {
+            color: #222;
+            font-size: 13px;
+        }
+    }
+}
+
+
+.container-fluid {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+
+.sec-right {
+    width: 75%;
+    margin-left: 20px;
+}
+
+.sec-left {
+    width: 25%;
+}
+
+/* Start Card */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 240px;
+    height: 360px;
+    padding: 10px;
+    box-shadow: $box-shadow-soft;
+    transition: $transision-esein-out;
+
+    .card-thumnail {
+        text-align: center;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .card-body {
+        position: relative;
+        height: 90px;
+
+        .card-title {
+            padding: 10px 0px;
+
+            a {
+                color: #333;
+
+                h2 {
+                    font-size: 15px;
+                    transition: $transision-esein-out;
+
+                    &:hover {
+                        color: $color-red;
+                    }
+                }
+            }
+        }
+
+        .card-buttons {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+
+            .count {
+                display: flex;
+                align-items: center;
+
+                button {
+                    height: 30px;
+                    width: 30px;
+                    background-color: $color-red;
+                    color: #fff;
+                    border: none;
+                    border-radius: 7px;
+                    font-size: 20px;
+                    margin: 0px 4px;
+                    transition: $transision-esein-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #741027;
+                    }
+                }
+
+                #counter {
+                    width: 30px;
+                    height: 30px;
+                    appearance: textfield;
+                    border: 1 solid $color-red;
+                    border-radius: 7px;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+
+            .amount-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 13px;
+                margin-left: 5px;
+
+                .discount-lable {
+                    color: #555;
+                    position: relative;
+                    margin: -5px 0px;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        left: 0px;
+                        right: 0px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-color: $color-red;
+                        height: 1px;
+                    }
+                }
+
+                .lable {
+                    color: #222;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .remove-cart {
+        width: 100%;
+
+        .remove {
+            margin-top: 10px;
+            display: flex;
+            width: 100%;
+            height: 30px;
+            font-family: "shabnam";
+            color: $color-red;
+            border: none;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+    }
+}
+
+/* End Card */
+
+
+.box-details {
+    box-shadow: $box-shadow-hard;
+    padding: 20px;
+    border-radius: 10px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed #ccc;
+
+        font-size: 14px;
+        color: #222;
+    }
+
+    .pikup {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #222;
+
+        .method-pikup {
+            .method {
+                background-color: #e7e7e7;
+                padding: 10px;
+                margin: 8px 0px;
+                border-radius: 7px;
+                font-size: 14px;
+                display: flex;
+
+                span {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .address {
+            margin-top: 10px;
+            font-size: 14px;
+            background-color: #fff8e1;
+            border: 1px solid #ddd;
+            padding: 5px;
+
+            .colorize {
+                color:
+                    #555;
+            }
+        }
+
+        .change-address {
+            margin: 10px;
+
+            a {
+                font-size: 14px;
+                color: $color-blue;
+            }
+        }
+    }
+
+    .amount {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        color: #222;
+        padding: 10px 10px;
+        border-radius: 10px;
+        background-color: rgba(232, 58, 58, 0.16);
+    }
+}
+
+.btn-pay {
+    margin-top: 14px;
+
+    .pay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        background-color: $color-red;
+        color: #fff;
+        font-family: "shabnam";
+        font-size: 15px;
+        transition: $transision-esein-out;
+
+        &:hover {
+            background-color: #a51d3c;
+        }
+    }
+}

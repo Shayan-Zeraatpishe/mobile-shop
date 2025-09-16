@@ -24,6 +24,30 @@
 /* End floating-button */
 
 
+/* Start Float Alert Add To Cart */
+
+.alert-addtocart{
+    background-color: #30B67A;
+    padding: 10px 10px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 99;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    box-shadow: $box-shadow-soft;
+    svg{
+        width: 30px;
+        margin-left: 5px;
+    }
+}
+
+/* End Float Alert Add To Cart */
+
+
 /* Start Header */
 .header-top {
     z-index: 99;
