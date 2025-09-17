@@ -1,0 +1,196 @@
+@import "defult.scss";
+
+
+.container-fluid {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+           background:
+        linear-gradient(#0d0505e3, #0d050591),
+        url("/images/aboutus/company-mobile.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.container-login {
+    display: flex;
+    width: 700px;
+    height: 500px;
+    box-shadow: $box-shadow-hard;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+.sec-right {
+    width: 50%;
+    border-radius: 0px 10px 10px 0px;
+    position: relative;
+
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: #222;
+    }
+
+    p {
+        margin-top: 10px;
+        color: #555;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .inp {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+
+        label {
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            margin: 5px 20px;
+            display: flex;
+            height: 40px;
+            padding: 8px 10px;
+            font-size: 16px;
+            text-align: center;
+            outline: none;
+            border: 2px solid $color-bluedark;
+            transition: $transision-esein-out;
+            border-radius: 7px;
+
+            &:focus {
+                border: 2px solid $color-red;
+            }
+        }
+
+        span{
+            margin-right: 20px;
+            color: $color-red;
+            font-size: 13px;
+            height: 20px;
+        }
+
+    }
+
+    .submit {
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        width: 100%;
+
+        button {
+            display: flex;
+            width: 100%;
+            height: 40px;
+            border: none;
+            background-color: $color-red;
+            color: #fff;
+            font-family: "shabnam";
+            justify-content: center;
+            align-items: center;
+            margin: 5px 20px;
+            border-radius: 7px;
+            transition: $transision-esein-out;
+
+            &:hover {
+                background-color: #9c1b39;
+            }
+        }
+    }
+
+    .remember {
+        margin-right: 20px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+
+        label {
+            font-size: 14px;
+            margin-right: 10px;
+            margin-top: 4px;
+        }
+    }
+}
+
+.sec-left {
+    width: 50%;
+    background: url("/images/aboutus/company-mobile.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+/* Start CheckBox */
+.remember .remember-inp {
+    appearance: none;
+    background-color: #dfe1e4;
+    border-radius: 72px;
+    border-style: none;
+    flex-shrink: 0;
+    height: 20px;
+    margin: 0;
+    position: relative;
+    width: 30px;
+}
+
+.remember .remember-inp::before {
+    bottom: -6px;
+    content: "";
+    left: -6px;
+    position: absolute;
+    right: -6px;
+    top: -6px;
+}
+
+.remember .remember-inp,
+.remember .remember-inp::after {
+    transition: all 100ms ease-out;
+}
+
+.remember .remember-inp::after {
+    background-color: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 14px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 14px;
+}
+
+.remember input[type=checkbox] {
+    cursor: default;
+}
+
+.remember .remember-inp:hover {
+    background-color: #c9cbcd;
+    transition-duration: 0s;
+}
+
+.remember .remember-inp:checked {
+    background-color: $color-red;
+}
+
+.remember .remember-inp:checked::after {
+    background-color: #fff;
+    left: 13px;
+}
+
+.remember :focus:not(.focus-visible) {
+    outline: 0;
+}
+
+.remember .remember-inp:checked:hover {
+    background-color: $color-red;
+}
+
+/* End CheckBox */
