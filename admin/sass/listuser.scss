@@ -6,8 +6,6 @@
     display: flex;
     justify-content: space-between;
     box-shadow: $box-shadow-soft;
-
-
 }
 
 .sec-right {
@@ -174,12 +172,23 @@
 /* End Header */
 
 
-/* Start Filter */
+
+
 .filter {
     margin-top: 25px;
     display: flex;
     margin-right: 10px;
     justify-content: space-between;
+
+    .select-order {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $color-bluedark;
+        height: 30px;
+        font-family: "shabnam";
+        margin: 0px 6px;
+        color: #666;
+    }
 
     .sec-right {
         display: flex;
@@ -196,26 +205,10 @@
         }
     }
 
-    .select-order {
-        outline: none;
-        border: none;
-        border-bottom: 2px solid $color-bluedark;
-        height: 30px;
-        font-family: "shabnam";
-        margin: 0px 6px;
-        width: 140px;
-        color: #666;
-        transition: $transision-esein-out;
-
-        &:hover {
-            border-bottom: 2px solid $color-red;
-        }
-    }
-
     .inp-search {
         display: flex;
         height: 30px;
-        width: 160px;
+        width: 140px;
         padding: 6px;
         border: none;
         border-bottom: 2px solid $color-bluedark;
@@ -263,128 +256,69 @@
     }
 }
 
-/* End Filter */
 
 
-/* Start Product */
-.container-product {
-    margin-top: 15px;
+
+/* Start List User */
+.container-user {
+    margin-top: 20px;
+}
+
+.sec-user {
+    background-color: #eee;
     overflow-y: scroll;
+    overflow-x: auto;
     height: 500px;
     background-color: #eee;
-    padding: 4px;
+    padding: 10px;
     border-radius: 7px;
 }
 
-.sec-product {
-    display: flex;
-    flex-direction: column;
-    box-shadow: $box-shadow-soft;
-    padding: 10px 14px 0px 14px;
-    border-radius: 7px;
-    margin: 14px 10px;
+.list-user {
+    width: 100%;
+    border-collapse: collapse;
     background-color: #fff;
+    font-size: 14px;
 
 
-    .sec-top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 6px;
-        color: #222;
+    .btn-edit {
+        color: $color-blue;
+        transition: $transision-esein-out;
 
-        img {
-            width: 80px;
-        }
-
-        .type-success {
-            color: $color-success;
-        }
-
-        .type-danger {
-            color: $color-red;
-        }
-
-        .details {
-            display: flex;
-            align-items: center;
-            width: 650px;
-            justify-content: space-between;
-
-            h2 {
-                font-size: 15px;
-
-            }
-
-            .sec-amount {
-                font-size: 14px;
-                display: flex;
-                align-items: center;
-
-                span {
-                    margin: 0px 4px;
-                }
-
-                svg {
-                    width: 25px;
-                }
-
-                .amount {
-                    background-color: #eee;
-                    padding: 2px 4px;
-                    border-radius: 5px;
-                    //  font-size: 13px;
-                    font-family: "cinema";
-                }
-            }
-        }
-
-        .btn-group {
-            display: flex;
-            flex-direction: column;
-
-            a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #0b0b0b;
-                padding: 5px 14px;
-                font-size: 13px;
-                margin: 2px 0px;
-                border-radius: 7px;
-                transition: $transision-esein-out;
-            }
-
-            .btn-success {
-                color: $color-success;
-            }
-
-            .btn-info {
-                color: $color-blue;
-            }
-
-            .btn-danger {
-                color: $color-red;
-            }
+        &:hover {
+            color: #112b52;
         }
     }
 
-    .sec-bottom {
-        border-top: 2px solid rgb(230, 230, 230);
-        display: flex;
-        padding: 10px 0px;
-        justify-content: center;
+    .btn-delete {
+        color: $color-red;
+        transition: $transision-esein-out;
 
-        h4 {
-            font-size: 13px;
-            color: #444;
-            margin: 0px 16px;
-
-            span{
-                margin: 0px 2px;
-            }
+        &:hover {
+            color: #891933;
+            ;
         }
     }
+
+    .type-success{
+        color: $color-success;
+    }
+
+    .text-center{
+        text-align: center;
+    }
+}
+
+.list-user,
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: right;
+}
+
+th{
+    background-color: #f8f8f8;
 }
 
 
@@ -434,4 +368,4 @@
 }
 /* End Pagging */
 
-/* End Product */
+/* End List User */

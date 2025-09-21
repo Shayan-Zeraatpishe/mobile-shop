@@ -6,8 +6,6 @@
     display: flex;
     justify-content: space-between;
     box-shadow: $box-shadow-soft;
-
-
 }
 
 .sec-right {
@@ -343,5 +341,53 @@
         }
     }
 }
+
+
+/* Start Pagging */
+.pagging {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .list-count {
+        display: flex;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 30px;
+            margin: 0px 5px;
+            background-color: #eee;
+            transition: $transision-esein-out;
+            border-radius: 5px;
+            transition: $transision-esein-out;
+
+            a {
+                transition: $transision-esein-out;
+                color: #222;
+            }
+
+            &:hover {
+                background-color: #a11b3b;
+
+                a {
+                    color: #fff;
+                }
+            }
+        }
+
+        .active{
+            background-color: #a11b3b;
+
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+/* End Pagging */
+
 
 /* End List Articles */
