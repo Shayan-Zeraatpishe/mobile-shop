@@ -6,8 +6,6 @@
     display: flex;
     justify-content: space-between;
     box-shadow: $box-shadow-soft;
-
-
 }
 
 .sec-right {
@@ -174,12 +172,23 @@
 /* End Header */
 
 
-/* Start Filter */
+/* Start list Email */
+
 .filter {
     margin-top: 25px;
     display: flex;
     margin-right: 10px;
     justify-content: space-between;
+
+    .select-order {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $color-bluedark;
+        height: 30px;
+        font-family: "shabnam";
+        margin: 0px 6px;
+        color: #666;
+    }
 
     .sec-right {
         display: flex;
@@ -196,26 +205,10 @@
         }
     }
 
-    .select-order {
-        outline: none;
-        border: none;
-        border-bottom: 2px solid $color-bluedark;
-        height: 30px;
-        font-family: "shabnam";
-        margin: 0px 6px;
-        width: 140px;
-        color: #666;
-        transition: $transision-esein-out;
-
-        &:hover {
-            border-bottom: 2px solid $color-red;
-        }
-    }
-
     .inp-search {
         display: flex;
         height: 30px;
-        width: 160px;
+        width: 140px;
         padding: 6px;
         border: none;
         border-bottom: 2px solid $color-bluedark;
@@ -263,129 +256,155 @@
     }
 }
 
-/* End Filter */
 
-
-/* Start Product */
-.container-product {
+.container-email {
     margin-top: 15px;
     overflow-y: scroll;
     height: 500px;
     background-color: #eee;
-    padding: 4px;
+    padding: 10px;
     border-radius: 7px;
 }
 
-.sec-product {
-    display: flex;
-    flex-direction: column;
+.sec-email {
     box-shadow: $box-shadow-soft;
-    padding: 10px 14px 0px 14px;
-    border-radius: 7px;
+    cursor: pointer;
     margin: 14px 10px;
-    background-color: #fff;
+    transition: box-shadow 0.3s ease;
 
-
-    .sec-top {
+    header {
+        background-color: $color-blue;
+        color: #fff;
+        height: 50px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        margin-bottom: 6px;
-        color: #222;
+        padding-right: 30px;
+        font-size: 14px;
+        transition: $transision-esein-out;
+        position: relative;
 
-        img {
-            width: 80px;
+        &:hover {
+            background-color: #19407a;
         }
-
-        .type-success {
-            color: $color-success;
-        }
-
-        .type-danger {
-            color: $color-red;
-        }
-
-        .details {
-            display: flex;
-            align-items: center;
-            width: 650px;
-            justify-content: space-between;
-
-            h2 {
-                font-size: 15px;
-
-            }
-
-            .sec-amount {
-                font-size: 14px;
-                display: flex;
-                align-items: center;
-
-                span {
-                    margin: 0px 4px;
-                }
-
-                svg {
-                    width: 25px;
-                }
-
-                .amount {
-                    background-color: #eee;
-                    padding: 2px 4px;
-                    border-radius: 5px;
-                    //  font-size: 13px;
-                    font-family: "cinema";
-                }
-            }
-        }
-
-        .btn-group {
-            display: flex;
-            flex-direction: column;
-
-            a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #0b0b0b;
-                padding: 5px 14px;
-                font-size: 13px;
-                margin: 2px 0px;
-                border-radius: 7px;
-                transition: $transision-esein-out;
-            }
-
-            .btn-success {
-                color: $color-success;
-            }
-
-            .btn-info {
-                color: $color-blue;
-            }
-
-            .btn-danger {
-                color: $color-red;
-            }
-        }
-    }
-
-    .sec-bottom {
-        border-top: 2px solid rgb(230, 230, 230);
-        display: flex;
-        padding: 10px 0px;
-        justify-content: center;
 
         h4 {
-            font-size: 13px;
-            color: #444;
-            margin: 0px 16px;
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
 
             span {
-                margin: 0px 2px;
+
+                margin: 0px 4px;
+            }
+
+            svg{
+                width: 22px;
+            }
+        }
+
+        p {
+            margin-right: 30px;
+
+            span {
+                margin: 0px 4px;
+            }
+        }
+
+
+        .btn {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            border: none;
+            border-radius: 5px;
+            font-family: "shabnam";
+            width: 110px;
+            height: 30px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #fff;
+            transition: $transision-esein-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                width: 20px;
+                margin-left: 5px;
+            }
+        }
+
+        .btn-alert {
+            background-color: $color-gold;
+
+            &:hover {
+                background-color: #e59304;
+            }
+        }
+
+        .btn-tick {
+            background-color: $color-success;
+
+            &:hover {
+                background-color: #00635c;
+            }
+        }
+
+    }
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+.body-email {
+    font-size: 14px;
+    max-height: 0;
+    overflow: hidden;
+    transition:
+        max-height 0.6s ease,
+        opacity 0.4s ease,
+        transform 0.4s ease;
+    background-color: #fff;
+    transform: translateY(10px);
+
+    ul {
+        margin-right: 10px;
+        padding: 15px;
+
+        li {
+            position: relative;
+            margin: 10px 0px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                right: -15px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $color-red;
             }
         }
     }
+
+    .dec-email {
+        padding: 10px;
+        text-align: justify;
+    }
 }
+
+.sec-email.active .body-email {
+    max-height: 500px;
+    transform: translateY(0px);
+    //  padding: 12px;
+}
+
 
 
 /* Start Pagging */
@@ -435,4 +454,5 @@
 
 /* End Pagging */
 
-/* End Product */
+
+/* End list Email */
