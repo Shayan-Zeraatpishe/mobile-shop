@@ -170,3 +170,296 @@
 }
 
 /* End Header */
+
+
+/* Start Filter */
+.filter {
+    margin-top: 25px;
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-between;
+
+    .sec-right {
+        display: flex;
+    }
+
+    .sec-left {
+        margin-left: 40px;
+        font-size: 13px;
+
+        .count {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    }
+
+    .select-order {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $color-bluedark;
+        height: 30px;
+        font-family: "shabnam";
+        margin: 0px 6px;
+        width: 140px;
+        color: #666;
+        transition: $transision-esein-out;
+
+        &:hover {
+            border-bottom: 2px solid $color-red;
+        }
+    }
+
+
+    .btn {
+        font-family: "shabnam";
+        width: 70px;
+        border: none;
+        color: #fff;
+        margin: 0px 10px;
+        border-radius: 6px;
+        transition: $transision-esein-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        svg {
+            width: 20px;
+            margin-left: 5px;
+            margin-top: -3px;
+        }
+    }
+
+    .btn-fillter {
+        background-color: $color-red;
+        box-shadow: $box-shadow-red;
+
+        &:hover {
+            background-color: #a11b3b;
+        }
+    }
+}
+
+/* End Filter */
+
+
+/* Start list Comment */
+.container-comment {
+    margin-top: 15px;
+    overflow-y: scroll;
+    height: 500px;
+    background-color: #eee;
+    padding: 4px;
+    border-radius: 7px;
+}
+
+.sec-comment {
+    box-shadow: $box-shadow-soft;
+    border-radius: 10px;
+    position: relative;
+    padding: 14px;
+    background-color: #fff;
+    margin: 14px 10px;
+    font-size: 14px;
+
+    .sec-top {
+        display: flex;
+        align-items: center;
+
+        .fullname {
+            margin: 0px 10px;
+            display: flex;
+            align-items: center;
+
+            svg{
+                width: 24px;
+                //display: flex;
+                margin-left: 5px;
+                margin-top: -5px;
+
+            }
+        }
+
+        .phonenumber {
+
+            margin: 0px 10px;
+
+            .phone{
+                padding: 2px 4px;
+                border-radius: 4px;
+                background-color: #eee;
+            }
+        }
+
+        .dec-comment {
+            margin: 0px 10px;
+        }
+    }
+
+    .sec-bottom {
+        margin: 20px 0px;
+        display: flex;
+
+        .btn-success {
+            color: $color-success;
+            margin: 0px 10px;
+            transition: $transision-esein-out;
+
+            &:hover {
+                color: #014e48;
+            }
+        }
+
+        .btn-danger {
+            color: $color-red;
+            margin: 0px 10px;
+            transition: $transision-esein-out;
+
+            &:hover {
+                color: #a11b3b;
+            }
+        }
+
+        .btn-info {
+            color: $color-blue;
+            margin: 0px 10px;
+            transition: $transision-esein-out;
+
+            &:hover {
+                color: #133260;
+            }
+        }
+
+        .sec-date {
+            margin-right: 20px;
+
+            .date {
+                background-color: #eee;
+                padding: 2px 4px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .replace-comment {
+        width: 100%;
+        position: relative;
+        max-height: 0px;
+        height: 0px;
+        overflow: hidden;
+        transition: $transision-esein-out;
+
+        .rep {
+
+            height: 70px;
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
+            max-height: 70px;
+            min-height: 70px;
+            outline: none;
+            font-family: "shabnam";
+            padding: 10px;
+            border-radius: 7px;
+            transition: $transision-esein-out;
+
+            &:focus {
+                border: 1px solid #a11b3b;
+            }
+        }
+
+        .btns {
+            position: absolute;
+            left: 10px;
+            display: flex;
+        }
+
+        .btn {
+            font-family: "shabnam";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 25px;
+            border: none;
+            font-size: 13px;
+            transition: $transision-esein-out;
+            margin: 0px 5px;
+            border-radius: 4px;
+        }
+
+        .btn-danger {
+            color: #fff;
+            background-color: $color-red;
+
+            &:hover {
+                background-color: #a11b3b;
+            }
+        }
+
+        .btn-info {
+            color: #fff;
+            background-color: $color-blue;
+
+            &:hover {
+                background-color: #0c203d;
+            }
+        }
+    }
+
+    .replace-comment-active {
+        height: 110px;
+        max-height: 110px !important;
+    }
+}
+
+/* End list Comment */
+
+
+/* Start Pagging */
+.pagging {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .list-count {
+        display: flex;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 30px;
+            margin: 0px 5px;
+            background-color: #eee;
+            transition: $transision-esein-out;
+            border-radius: 5px;
+            transition: $transision-esein-out;
+
+            a {
+                transition: $transision-esein-out;
+                color: #222;
+            }
+
+            &:hover {
+                background-color: #a11b3b;
+
+                a {
+                    color: #fff;
+                }
+            }
+        }
+
+        .active {
+            background-color: #a11b3b;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+/* End Pagging */
