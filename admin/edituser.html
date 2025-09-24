@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/addproduct.css">
-    <title>افزودن محصول</title>
+    <link rel="stylesheet" href="css/adduser.css">
+    <title>ویرایش کاربر</title>
 </head>
 
 <body>
@@ -196,88 +196,77 @@
         <!-- Start Container Body Panel -->
         <section class="container-body">
             <header class="header-sec">
-                <h1>افزودن محصول</h1>
+                <h1>ویرایش کاربر</h1>
             </header>
 
-
-            <!-- Start Container Product -->
-            <section class="container-addproduct">
-
-                <div class="inp-1 inp">
-                    <label for="nameproduct">نام محصول</label>
-                    <input type="text" id="nameproduct" class="input">
-                    <span>وارد کردن نام محصول اجباری است</span>
-                </div>
-
-                <div class="inp-2 inp">
-                    <label for="fullnameproduct">نام کامل محصول</label>
-                    <input type="text" id="fullnameproduct" class="input">
-                    <span>وارد کردن نام محصول اجباری است</span>
-                </div>
-                
-                <div class="inp-3 inp">
-                    <label for="amount">قیمت محصول</label>
-                    <input type="number" id="amount" class="input">
-                    <span>وارد کردن قیمت محصول اجباری است</span>
-                </div>
-
-                <div class="inp-4 inp">
-                    <label for="amount">قیمت تخفیف خورده</label>
-                    <input type="number" id="amount" class="input">
-                    <span>وارد کردن قیمت محصول اجباری است</span>
-                </div>
-
-                <div class="inp-5 inp">
-                    <label>ویژگی های محصول</label>
-                    <div id="specContainer1"></div>
-                    <button type="button" class="btn btn-green" onclick="addAdditional()">افزودن ویژگی ها</button>
-                </div>
-
-                <div class="inp-6 inp">
-                    <label for="colorInput">رنگ محصول</label>
-                    <input type="color" id="colorInput" class="input">
-                    <button type="button" class="btn btn-red" onclick="addColor()">افزودن رنگ</button>
-
-                    <ul id="colorList"></ul>
-                </div>
-
-                <div class="inp-7 inp">
-                    <label>مشخصات محصول</label>
-                    <div id="specContainer"></div>
-                    <button type="button" class="btn btn-green" onclick="addSpec()">افزودن مشخصه</button>
-                </div>
-
-                <div class="inp-8 inp">
-                    <hr>
-                    <label for="color">معرفی محصول</label>
-                    <textarea name="" class="dec-text" id=""></textarea>
-                    <span>وارد کردن معرفی محصول اجباری است</span>
-                </div>
-
-                <div class="inp-9 inp">
-                    <div class="container-btn">
-                        <label for="imageInput" class="btn btn-red file-upload">انتخاب عکس</label>
-                        <input type="file" id="imageInput" accept="image/*" />
-                        <button type="button" class="btn btn-red" onclick="addImage()">افزودن عکس</button>
+            <!-- Start Container User -->
+            <section class="container-fluid-user">
+                <section class="container-user">
+                    <div class="sec-inp">
+                        <label for="fullname">نام و نام خانوادگی</label>
+                        <input type="text" class="inp" id="fullname">
+                        <span class="text-danger">وارد کردن نام و نام خانوادگی اجباری است</span>
                     </div>
-                    <div id="imageList" style="margin-top:10px;display:flex;flex-wrap:wrap;gap:10px;"></div>
-                </div>
+                    <div class="sec-inp">
+                        <label for="phonenuber">شماره موبایل</label>
+                        <input type="text" class="inp" id="phonenuber">
+                        <span class="text-danger">وارد کردن شماره موبایل اجباری است</span>
+                    </div>
+                    <div class="sec-inp">
+                        <label for="email">ایمیل</label>
+                        <input type="text" class="inp" id="email">
+                        <span class="text-danger">وارد کردن ایمیل اجباری است</span>
+                    </div>
+                    <div class="sec-inp">
+                        <label for="password">رمزعبور</label>
+                        <input type="text" class="inp" id="password">
+                        <span class="text-danger">وارد کردن رمزعبور اجباری است</span>
+                    </div>
+                    <div class="sec-inp">
+                        <label for="Province">استان</label>
+                        <select name="" id="Province">
+                            <option value="">تهران</option>
+                            <option value="">فارس</option>
+                            <option value="">مشهد</option>
+                            <option value="">اصفهان</option>
+                        </select>
+                    </div>
+                    <div class="sec-inp">
+                        <label for="City">شهر</label>
+                        <select name="" id="City">
+                            <option value="">شیراز</option>
+                            <option value="">بیضا</option>
+                            <option value="">مرودشت</option>
+                            <option value="">کوشک هزار</option>
+                        </select>
+                    </div>
+                    <div class="sec-inp">
+                        <label for="address">آدرس</label>
+                        <input type="text" id="address" class="inp">
+                    </div>
+                    <div class="sec-inp">
+                        <label for="plak">پلاک</label>
+                        <input type="text" id="plak" class="inp">
+                    </div>
+                    <div class="sec-inp">
+                        <label for="role">نقش در سایت</label>
+                        <select name="" id="role">
+                            <option value="v1">کاربر عادی</option>
+                            <option value="v1">کاربر ادمین</option>
+                            <option value="v1">کاربر مقاله</option>
+                            <option value="v1">کاربر محصول</option>
+                        </select>
+                    </div>
+                    <div class="sec-inp">
+                        <button type="submit" class="submit">ویرایش کاربر</button>
+                    </div>
 
-                <div class="inp-10">
-                    <button type="submit" class="btn btn-red">افزودن محصول</button>
-                </div>
+                </section>
 
             </section>
-            <!-- Start Container Product -->
+            <!-- Start Container User -->
 
         </section>
-        <!-- End Container Body Panel -->
-
-    </section>
-
-    <!-- Start js -->
-    <script src="js/addproduct.js"></script>
-    <!-- End js -->
 </body>
 
 </html>
