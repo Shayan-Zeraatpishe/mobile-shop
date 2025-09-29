@@ -175,127 +175,83 @@
 /* End Header */
 
 
-/* Start Setting Site */
+/* Start Add Btn */
+.filter {
+    margin-top: 18px;
 
-.container-setting {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-y: scroll;
-    height: 550px;
-}
+    .btn-danger {
+        background-color: $color-red;
+        height: 35px;
+        display: flex;
+        width: 130px;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: $box-shadow-red;
+        transition: $transision-esein-out;
 
-.lbllogo {
-    background-color: $color-red;
-    box-shadow: $box-shadow-red;
-    height: 35px;
-    width: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff !important;
-    transition: $transision-esein-out;
-    border-radius: 5px;
-
-    &:hover {
-        background-color: #a11b3b;
-
+        &:hover {
+            background-color: #891933;
+        }
     }
 }
 
-input[type="file"] {
-    display: none;
-}
+/* End Add Btn */
 
-.preview-container {
-    height: 100px;
+
+/* Start Table Discount */
+
+.sec-table {
     background-color: #eee;
-    width: 180px;
+    overflow-y: scroll;
+    overflow-x: auto;
+    height: 420px;
+    background-color: #eee;
+    padding: 10px;
     border-radius: 7px;
     margin-top: 20px;
-    position: relative;
-
-    span {
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%);
-        color: #666;
-        z-index: 0;
-    }
-
-    img {
-        position: absolute;
-        width: 180px;
-        z-index: 99;
-    }
 }
 
-.sec-setting {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 200px;
-    width: 1000px;
+.list-user {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    font-size: 14px;
 
-    .inp-group {
-        display: flex; 
+    .text-center {
+        text-align: center;
     }
 
-    .sec-inp {
-        display: flex;
-        flex-direction: column;
-        font-size: 14px;
-        margin: 10px;
+    .btn-delete {
+        color: $color-red;
+        transition: $transision-esein-out;
 
-        label {
-            margin-bottom: 6px;
-            color: #222;
+        &:hover {
+            color: #891933;
         }
+    }
 
-        .text-danger {
-            font-size: 13px;
-            color: #a11b3b;
-            margin-top: 5px;
-        }
+    .btn-edit {
+        transition: $transision-esein-out;
+        color: $color-blue;
 
-        input[type="text"] {
-            height: 40px;
-            width: 300px;
-            padding: 5px 10px;
-            transition: $transision-esein-out;
-            background-clip: padding-box;
-            border: 1px solid #ced4da;
-            border-radius: 0.375rem;
-            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
-            &:focus {
-                border-color: $color-red;
-                outline: 0;
-                box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
-            }
-        }
-
-        .submit {
-            font-family: "shabnam";
-            background-color: $color-red;
-            color: #fff;
-            box-shadow: $box-shadow-red;
-            border: none;
-            border-radius: 5px;
-            font-size: 14px;
-            transition: $transision-esein-out;
-            height: 40px;
-            cursor: pointer;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            width: 200px;
-
-            &:hover {
-                background-color: #a11b3b;
-            }
+        &:hover {
+            color: #0b1c35;
         }
     }
 }
 
-/* End Setting Site */
+.list-user,
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: right;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+/* End Table Discount */

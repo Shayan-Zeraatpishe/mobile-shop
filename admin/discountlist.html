@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/settingsite.css">
-    <title>تنظیمات سایت</title>
+    <link rel="stylesheet" href="css/discountlist.css">
+    <title>لیست تخفیف</title>
 </head>
 
 <body>
+    
     <!-- Start Header Panel -->
     <header class="header">
         <section class="sec-right">
@@ -247,138 +248,63 @@
         <!-- Start Container Body Panel -->
         <section class="container-body">
             <header class="header-sec">
-                <h1>تنظیمات سایت</h1>
+                <h1>لیست تخفیف</h1>
             </header>
 
-            <section class="container-setting">
-                <section class="sec-setting">
-                    <div class="inp-group">
 
-                        <div class="sec-inp">
-                            <label for="namesite">نام سایت</label>
-                            <input autocomplete="off" type="text" class="inp" id="namesite">
-                            <span class="text-danger">وارد کردن نام سایت اجباری است</span>
-                        </div>
-                        <div class="sec-inp">
-                            <label for="phonenumber1">شماره موبایل 1</label>
-                            <input autocomplete="off" type="text" class="inp" id="phonenumber1">
-                            <span class="text-danger">وارد کردن شماره موبایل اجباری است</span>
-                        </div>
-                        <div class="sec-inp">
-                            <label for="phonenumber2">شماره موبایل 2</label>
-                            <input autocomplete="off" type="text" class="inp" id="phonenumber2">
-                            <span class="text-danger">وارد کردن شماره موبایل اجباری است</span>
-                        </div>
-
-                    </div>
-
-                    <div class="inp-group">
-
-                        <div class="sec-inp">
-                            <label for="telephone">تلفن</label>
-                            <input autocomplete="off" type="text" class="inp" id="telephone">
-                            <span class="text-danger">وارد کردن تلفن اجباری است</span>
-                        </div>
-                        <div class="sec-inp">
-                            <label for="email">ایمیل</label>
-                            <input autocomplete="off" type="text" class="inp" id="email">
-                            <span class="text-danger">وارد کردن نام سایت اجباری است</span>
-                        </div>
-                        <div class="sec-inp">
-                            <label for="address">آدرس فروشگاه</label>
-                            <input autocomplete="off" type="text" class="inp" id="address">
-                            <span class="text-danger">وارد کردن آدرس فروشگاه اجباری است</span>
-                        </div>
-
-                    </div>
-
-
-                    <div class="inp-group">
-
-                        <div class="sec-inp">
-                            <label for="wathsapp">لینک واتس اپ</label>
-                            <input autocomplete="off" type="text" class="inp" id="wathsapp">
-                            <span class="text-danger">وارد کردن لینک اجباری است</span>
-                        </div>
-                        <div class="sec-inp">
-                            <label for="telegram">لینک تلگرام</label>
-                            <input autocomplete="off" type="text" class="inp" id="telegram">
-                            <span class="text-danger">وارد کردن لینک اجباری است</span>
-                        </div>
-                        <div class="sec-inp">
-                            <label for="instagram">لینک اینستاگرام</label>
-                            <input autocomplete="off" type="text" class="inp" id="instagram">
-                            <span class="text-danger">وارد کردن لینک اجباری است</span>
-                        </div>
-
-                    </div>
-
-                    <div class="inp-group">
-                        <div class="sec-inp">
-                            <label for="robika">لینک روبیکا</label>
-                            <input autocomplete="off" type="text" class="inp" id="robika">
-                            <span class="text-danger">وارد کردن لینک اجباری است</span>
-                        </div>
-
-                        <div class="sec-inp">
-                            <label for="timespan">ساعت کار فروشگاه</label>
-                            <input autocomplete="off" type="text" class="inp" id="timespan">
-                            <span class="text-danger">وارد کردن ساعت اجباری است</span>
-                        </div>
-
-                        <div class="sec-inp">
-                            <label for="titlesite">عنوان سایت</label>
-                            <input autocomplete="off" type="text" class="inp" id="titlesite">
-                            <span class="text-danger">وارد کردن عنوان اجباری است</span>
-                        </div>
-
-
-                    </div>
-
-                    <div class="inp-group">
-
-                        <div class="sec-inp">
-                            <label for="logosite" class="lbllogo">لوگو سایت</label>
-                            <input autocomplete="off" type="file" class="inp" id="logosite">
-                            <span class="text-danger">وارد کردن لوگو سایت اجباری است</span>
-
-                            <div class="preview-container">
-                                <span>140px * 160px</span>
-                                <img id="imagePreview" src="" alt="preview" style="display: none;">
-                            </div>
-
-                        </div>
-                        <div class="sec-inp sec-inp-right">
-                            <label for="minilogosite" class="lbllogo">لوگو کوچک</label>
-                            <input type="file" class="inp" id="minilogosite">
-                            <span class="text-danger">وارد کردن لوگو سایت اجباری است</span>
-
-                            <div class="preview-container">
-                                <span>140px * 160px</span>
-                                <img id="imagePreview1" src="" alt="preview" style="display: none;">
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="sec-inp">
-                        <button type="submit" class="submit">ویرایش اطلاعات</button>
-                    </div>
-                </section>
+            <!-- Start Filter -->
+            <section class="filter">
+                <a href="#" class="btn-danger">افزودن تخفیف</a>
             </section>
+            <!-- End Filter -->
+
+
+            <!-- Start Sec Table Product -->
+            <section class="sec-table">
+                <table class="list-user">
+                    <tr>
+                        <th>کد</th>
+                        <th>نوع کد تخفیف</th>
+                        <th>میزان تخفیف</th>
+                        <th>توضیحات</th>
+                        <th>حداقل خرید</th>
+                        <th>حداکثر خرید</th>
+                        <th>تاریخ انقضاء</th>
+                        <th class="text-center" colspan="2">عمیلات</th>
+                    </tr>
+                    <tr>
+                        <td>123DeH56UY</td>
+                        <td>درصد تخفیف کل کالا</td>
+                        <td>1,200,000</td>
+                        <td>کد خرید برای محصولات خوب</td>
+                        <td><span>1.240.000</span><span> تومان </span></td>
+                        <td><span>1.240.000</span><span> تومان </span></td>
+                        <td>1404/05/13</td>
+                        <td class="text-center"><a href="#" class="btn-edit">ویرایش </a></td>
+                        <td class="text-center"><a href="#" class="btn-delete">حذف</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>123DeH56UY</td>
+                        <td>درصد تخفیف کل کالا</td>
+                        <td>1,200,000</td>
+                        <td>کد خرید برای محصولات خوب</td>
+                        <td><span>1.240.000</span><span> تومان </span></td>
+                        <td><span>1.240.000</span><span> تومان </span></td>
+                        <td>1404/05/13</td>
+                        <td class="text-center"><a href="#" class="btn-edit">ویرایش </a></td>
+                        <td class="text-center"><a href="#" class="btn-delete">حذف</a></td>
+                    </tr>
+
+                </table>
+            </section>
+
+            <!-- End Sec Table Product -->
 
         </section>
         <!-- End Container Body Panel -->
 
     </section>
-
-
-    <!-- Start Script -->
-    <script src="js/settingsite.js"></script>
-    <!-- End Script -->
-
 </body>
 
 </html>
