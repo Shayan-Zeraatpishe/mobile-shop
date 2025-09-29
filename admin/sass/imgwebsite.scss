@@ -114,6 +114,7 @@
                     color: #fff;
                     padding: 18px 20px;
 
+
                     path {
                         fill: #fff;
                     }
@@ -174,3 +175,115 @@
 
 /* End Header */
 
+
+.header-slider {
+    margin-top: 20px;
+    font-size: 9px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    color: #222;
+
+    h1 {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            right: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: $color-red;
+            box-shadow: $box-shadow-red;
+        }
+    }
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 40px 0px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.slide-side {
+    margin: 0px 20px;
+    background-color: #eee;
+    height: 100px;
+    width: 200px;
+    position: relative;
+    border-radius: 7px;
+
+    input {
+        display: none;
+    }
+
+    label {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #666;
+        transition: $transision-esein-out;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #0b0b0b20;
+
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        z-index: 90;
+        height: 100px;
+        width: 200px;
+        border-radius: 7px;
+    }
+}
+
+.container-mini-slider {
+    margin-top: 30px;
+
+    .sec-mini-slider {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.submit {
+    font-family: "shabnam";
+    background-color: $color-red;
+    color: #fff;
+    box-shadow: $box-shadow-red;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: $transision-esein-out;
+    height: 40px;
+    width: 160px;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-right: 20px;
+
+    &:hover {
+        background-color: #a11b3b;
+    }
+}

@@ -226,8 +226,6 @@ hr {
     width: 140px;
     cursor: pointer;
     margin-top: 10px;
-
-
 }
 
 .btn-red {
@@ -266,16 +264,19 @@ hr {
 
         input[type="text"],
         input[type="number"] {
-            height: 30px;
+            height: 40px;
             width: 280px;
-            outline: none;
-            border: 1px solid #444;
-            border-radius: 5px;
-            padding: 4px;
+            padding: 5px 10px;
             transition: $transision-esein-out;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.375rem;
+            margin: 0px 10px;
 
             &:focus {
-                border: 1px solid #a11b3b;
+                border-color: $color-red;
+                outline: 0;
+                box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
             }
         }
 
@@ -303,13 +304,15 @@ hr {
             font-size: 14px;
             padding: 10px;
             font-family: "shabnam";
-            border-radius: 7px;
             outline: none;
-            border: 1px solid #444;
+            border: 1px solid #ced4da;
+            border-radius: 0.375rem;
             transition: $transision-esein-out;
 
             &:focus {
-                border: 1px solid #a11b3b;
+                border-color: $color-red;
+                outline: 0;
+                box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
             }
         }
     }

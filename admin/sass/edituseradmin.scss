@@ -201,14 +201,17 @@
     }
 
     input[type="text"] {
-        height: 35px;
+        height: 40px;
         padding: 5px 10px;
         transition: $transision-esein-out;
-        border: 1px solid #444;
-        border-radius: 5px;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.375rem;
 
         &:focus {
-            border: 1px solid #a11b3b;
+            border-color: $color-red;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
         }
     }
 
@@ -228,10 +231,9 @@
         border-radius: 5px;
         font-size: 14px;
         transition: $transision-esein-out;
-        height: 35px;
+        height: 40px;
         cursor: pointer;
         margin-top: 10px;
-        // margin-bottom: 15px;
 
         &:hover {
             background-color: #a11b3b;

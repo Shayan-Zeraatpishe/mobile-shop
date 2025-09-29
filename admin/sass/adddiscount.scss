@@ -174,120 +174,143 @@
 
 /* End Header */
 
-/* Start Container Add Edit Order */
 
-.container-addorder {
+.container-discount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 550px;
+}
 
-    margin-top: 30px;
 
-    .sec-inputs {
+.sec-discount {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 200px;
+
+    .inp-group {
         display: flex;
+    }
+
+    .btn-group {
+        //  display: flex !important;
+        flex-direction: row !important;
         align-items: center;
-        justify-content: space-around;
+    }
 
-        .sec-inp {
-            display: flex;
-            flex-direction: column;
-            font-size: 14px;
-            margin: 0px 0px;
+    .sec-inp {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        margin: 10px 40px;
+        justify-content: center;
 
-            label {
-                margin-bottom: 6px;
-                color: #222;
-            }
 
-            .text-danger {
-                font-size: 13px;
-                color: #a11b3b;
-                margin-top: 3px;
-            }
-
-            .inp-date {
-                height: 35px;
-                padding: 5px 10px;
-                width: 250px;
-                transition: $transision-esein-out;
-                background-clip: padding-box;
-                border: 1px solid #ced4da;
-                border-radius: 0.375rem;
-
-                &:focus {
-                    border-color: $color-red;
-                    outline: 0;
-                    box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
-                }
-            }
-
-            select {
-                height: 35px;
-                padding: 5px 10px;
-                font-family: "shabnam";
-                outline: none;
-                transition: $transision-esein-out;
-                width: 250px;
-                background-clip: padding-box;
-                border: 1px solid #ced4da;
-                border-radius: 0.375rem;
-
-                &:focus {
-                    border-color: $color-red;
-                    outline: 0;
-                    box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
-                }
-            }
-
-            .submit {
-                font-family: "shabnam";
-                background-color: $color-red;
-                color: #fff;
-                box-shadow: $box-shadow-red;
-                border: none;
-                border-radius: 5px;
-                font-size: 14px;
-                transition: $transision-esein-out;
-                height: 35px;
-                cursor: pointer;
-                margin-top: 10px;
-                margin-bottom: 15px;
-
-                &:hover {
-                    background-color: #a11b3b;
-                }
-            }
-        }
-
-        .custom-select {
-            width: 300px;
-        }
-
-        .select-box {
+        .btn {
+            background-color: $color-red;
+            box-shadow: $box-shadow-red;
             height: 35px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff !important;
+            transition: $transision-esein-out;
+            border-radius: 5px;
+            font-family: "shabnam";
+            border: none;
+            margin: 0px 10px;
+
+            &:hover {
+                background-color: #a11b3b;
+
+            }
+        }
+
+        label {
+            margin-bottom: 6px;
+            color: #222;
+        }
+
+        .text-danger {
+            font-size: 13px;
+            color: #a11b3b;
+            margin-top: 5px;
+        }
+
+        input[type="text"],
+        .select-box,
+        input[type="number"] {
+            height: 40px;
+            width: 300px;
+            padding: 5px 10px;
+            transition: $transision-esein-out;
             background-clip: padding-box;
             border: 1px solid #ced4da;
             border-radius: 0.375rem;
+            font-family: "shabnam";
+
+            &:focus {
+                border-color: $color-red;
+                outline: 0;
+                box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
+            }
+        }
+
+        .submit {
+            font-family: "shabnam";
+            background-color: $color-red;
+            color: #fff;
+            box-shadow: $box-shadow-red;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: $transision-esein-out;
+            height: 40px;
+            cursor: pointer;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            width: 200px;
+
+            &:hover {
+                background-color: #a11b3b;
+            }
+        }
+    }
+}
+
+.container-tabel {
+    width: 1000px;
+    background-color: #eee;
+    margin-top: 20px;
+    padding: 10px;
+
+    .btn-group {
+
+        a {
+            background-color: $color-red;
+            box-shadow: $box-shadow-red;
+            height: 35px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            transition: $transision-esein-out;
+            border-radius: 5px;
+            font-size: 14px;
+
+            &:hover {
+                background-color: #a11b3b;
+
+            }
         }
     }
 
-    .btn {
-        font-family: "shabnam";
-        width: 140px;
-        height: 40px;
-        border: none;
-        color: #fff;
-        background-color: $color-red;
-        box-shadow: $box-shadow-red;
-        margin: 0px 10px;
-        border-radius: 6px;
-        transition: $transision-esein-out;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-
-        &:hover {
-            background-color: #891933;
-        }
-    }
 
     /* Start Table Prduct */
 
@@ -315,13 +338,14 @@
         }
     }
 
-    .list-user {
+    table {
         width: 100%;
         border-collapse: collapse;
         background-color: #fff;
         font-size: 14px;
+        margin-top: 20px;
 
-        .btn-delete {
+        .btn-remove {
             color: $color-red;
             transition: $transision-esein-out;
 
@@ -344,6 +368,5 @@
     }
 
     /* End Table Prduct */
-}
 
-/* End Container Add Edit Order */
+}

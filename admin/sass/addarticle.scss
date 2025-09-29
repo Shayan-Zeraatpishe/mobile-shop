@@ -188,14 +188,14 @@
 .header-article {
     display: flex;
     justify-content: space-between;
-    width: 1000px;
+    width: 100%;
     align-items: end;
 
     .btn-submit {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 35px;
+        height: 40px;
         width: 130px;
         font-family: "shabnam";
         background-color: $color-red;
@@ -216,22 +216,25 @@
         flex-direction: column;
 
         label {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             font-size: 14px;
         }
 
-        input[type="text"] {
-            height: 30px;
-            width: 200px;
-            padding: 5px;
-        }
-
-        select {
-            height: 30px;
-            width: 200px;
-            padding: 5px;
+        input[type="text"] , select {
+            height: 40px;
+            width: 250px;
+            padding: 5px 10px;
+            transition: $transision-esein-out;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.375rem;
             font-family: "shabnam";
-            outline: none;
+
+            &:focus {
+                border-color: $color-red;
+                outline: 0;
+                box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
+            }
         }
     }
 }

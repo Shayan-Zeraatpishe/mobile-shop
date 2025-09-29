@@ -202,61 +202,76 @@
             <!-- Start Container User -->
             <section class="container-fluid-user">
                 <section class="container-user">
-                    <div class="sec-inp">
-                        <label for="fullname">نام و نام خانوادگی</label>
-                        <input type="text" class="inp" id="fullname">
-                        <span class="text-danger">وارد کردن نام و نام خانوادگی اجباری است</span>
+
+                    <div class="inp-group">
+
+                        <div class="sec-inp">
+                            <label for="fullname">نام و نام خانوادگی</label>
+                            <input type="text" class="inp" id="fullname">
+                            <span class="text-danger">وارد کردن نام و نام خانوادگی اجباری است</span>
+                        </div>
+                        <div class="sec-inp">
+                            <label for="phonenuber">شماره موبایل</label>
+                            <input type="text" class="inp" id="phonenuber">
+                            <span class="text-danger">وارد کردن شماره موبایل اجباری است</span>
+                        </div>
+                        <div class="sec-inp">
+                            <label for="email">ایمیل</label>
+                            <input type="text" class="inp" id="email">
+                            <span class="text-danger">وارد کردن ایمیل اجباری است</span>
+                        </div>
+
                     </div>
-                    <div class="sec-inp">
-                        <label for="phonenuber">شماره موبایل</label>
-                        <input type="text" class="inp" id="phonenuber">
-                        <span class="text-danger">وارد کردن شماره موبایل اجباری است</span>
+
+                    <div class="inp-group">
+                        <div class="sec-inp">
+                            <label for="password">رمزعبور</label>
+                            <input type="text" class="inp" id="password">
+                            <span class="text-danger">وارد کردن رمزعبور اجباری است</span>
+                        </div>
+                        <div class="sec-inp">
+                            <label for="Province">استان</label>
+                            <select name="" id="Province">
+                                <option value="">تهران</option>
+                                <option value="">فارس</option>
+                                <option value="">مشهد</option>
+                                <option value="">اصفهان</option>
+                            </select>
+                        </div>
+                        <div class="sec-inp">
+                            <label for="City">شهر</label>
+                            <select name="" id="City">
+                                <option value="">شیراز</option>
+                                <option value="">بیضا</option>
+                                <option value="">مرودشت</option>
+                                <option value="">کوشک هزار</option>
+                            </select>
+                        </div>
+
                     </div>
-                    <div class="sec-inp">
-                        <label for="email">ایمیل</label>
-                        <input type="text" class="inp" id="email">
-                        <span class="text-danger">وارد کردن ایمیل اجباری است</span>
+
+                    <div class="inp-group">
+
+                        <div class="sec-inp">
+                            <label for="address">آدرس</label>
+                            <input type="text" id="address" class="inp">
+                        </div>
+                        <div class="sec-inp">
+                            <label for="plak">پلاک</label>
+                            <input type="text" id="plak" class="inp">
+                        </div>
+                        <div class="sec-inp">
+                            <label for="role">نقش در سایت</label>
+                            <select name="" id="role">
+                                <option value="v1">کاربر عادی</option>
+                                <option value="v1">کاربر ادمین</option>
+                                <option value="v1">کاربر مقاله</option>
+                                <option value="v1">کاربر محصول</option>
+                            </select>
+                        </div>
+
                     </div>
-                    <div class="sec-inp">
-                        <label for="password">رمزعبور</label>
-                        <input type="text" class="inp" id="password">
-                        <span class="text-danger">وارد کردن رمزعبور اجباری است</span>
-                    </div>
-                    <div class="sec-inp">
-                        <label for="Province">استان</label>
-                        <select name="" id="Province">
-                            <option value="">تهران</option>
-                            <option value="">فارس</option>
-                            <option value="">مشهد</option>
-                            <option value="">اصفهان</option>
-                        </select>
-                    </div>
-                    <div class="sec-inp">
-                        <label for="City">شهر</label>
-                        <select name="" id="City">
-                            <option value="">شیراز</option>
-                            <option value="">بیضا</option>
-                            <option value="">مرودشت</option>
-                            <option value="">کوشک هزار</option>
-                        </select>
-                    </div>
-                    <div class="sec-inp">
-                        <label for="address">آدرس</label>
-                        <input type="text" id="address" class="inp">
-                    </div>
-                    <div class="sec-inp">
-                        <label for="plak">پلاک</label>
-                        <input type="text" id="plak" class="inp">
-                    </div>
-                    <div class="sec-inp">
-                        <label for="role">نقش در سایت</label>
-                        <select name="" id="role">
-                            <option value="v1">کاربر عادی</option>
-                            <option value="v1">کاربر ادمین</option>
-                            <option value="v1">کاربر مقاله</option>
-                            <option value="v1">کاربر محصول</option>
-                        </select>
-                    </div>
+                    
                     <div class="sec-inp">
                         <button type="submit" class="submit">افزودن کاربر جدید</button>
                     </div>
