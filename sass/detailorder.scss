@@ -1,0 +1,150 @@
+@import "defult.scss";
+
+
+.container-fluid {
+    display: flex;
+    height: 100vh;
+
+}
+
+
+header {
+    margin-right: 15px;
+
+    h1 {
+        font-size: 20px;
+        position: relative;
+
+
+        &::after {
+            position: absolute;
+            content: '';
+            right: -35px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $color-red;
+            box-shadow: $box-shadow-red;
+            width: 6px;
+            height: 35px;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            right: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $color-red;
+            box-shadow: $box-shadow-red;
+            width: 6px;
+            height: 20px;
+        }
+    }
+}
+
+
+.accordion-right {
+    width: 260px;
+    box-shadow: $box-shadow-hard;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            margin: 7px 0px;
+
+            a {
+                color: #222;
+                display: flex;
+                height: 55px;
+                width: 200px;
+                align-items: center;
+                padding-right: 20px;
+                box-shadow: $box-shadow-soft;
+                border-radius: 7px;
+                font-size: 14px;
+                transition: $transision-esein-out;
+
+                &:hover {
+                    color: #fff;
+                    background-color: $color-red;
+                    transform: translateX(-5px);
+                }
+            }
+        }
+    }
+}
+
+.right-sec {
+    box-shadow: $box-shadow-hard;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.row{
+   // background-color: red;
+    width: 600px;
+    margin-right: 40px;
+}
+
+
+table {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    font-size: 14px;
+
+
+    .btn-edit {
+        color: $color-blue;
+        transition: $transision-esein-out;
+
+        &:hover {
+            color: #112b52;
+        }
+    }
+
+    .btn-delete {
+        color: $color-red;
+        transition: $transision-esein-out;
+
+        &:hover {
+            color: #891933;
+            ;
+        }
+    }
+
+    .type-success {
+        color: $color-success;
+    }
+
+    .type-yellow {
+        color: $color-gold;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+}
+
+.table,
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: right;
+}
+
+th {
+    background-color: #f8f8f8;
+}

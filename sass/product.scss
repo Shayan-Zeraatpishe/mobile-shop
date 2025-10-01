@@ -11,12 +11,28 @@
         }
     }
 }
+
 /* End Link Pages */
 
 /* Start Details Product */
 .product-1 {
     display: flex;
 }
+
+
+/* Start Remove spin input Number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* End Remove spin input Number */
+
 
 .sec-right {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -105,6 +121,7 @@
     font-size: 40px;
     cursor: pointer;
 }
+
 /* End Gallery Images Product */
 
 hr {
@@ -119,6 +136,7 @@ hr {
     margin-top: 10px;
     margin-right: 40px;
     width: 100%;
+    color: #222;
 
     header {
         h1 {
@@ -152,6 +170,7 @@ hr {
                 height: 12px;
                 border-radius: 50%;
                 border: 5px solid $color-red;
+                box-shadow: $box-shadow-red;
 
             }
         }
@@ -188,6 +207,7 @@ hr {
         }
     }
 }
+
 /* End Mini Details Product */
 /* End Details Product */
 
@@ -199,6 +219,7 @@ hr {
     margin-right: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     height: 400px;
+    color: #222;
 
     .additional {
         p {
@@ -208,6 +229,13 @@ hr {
             padding: 10px 10px;
             font-size: 13px;
             color: #222;
+            display: flex;
+            align-items: center;
+
+            svg {
+                width: 20px;
+                margin-left: 10px;
+            }
         }
     }
 
@@ -227,6 +255,7 @@ hr {
             }
         }
     }
+
     /* End Select Color  */
 
     /* Start Pay Product */
@@ -252,6 +281,7 @@ hr {
                 margin: 0px 4px;
                 transition: $transision-esein-out;
                 cursor: pointer;
+                box-shadow: $box-shadow-red;
 
                 &:hover {
                     background-color: #741027;
@@ -262,10 +292,11 @@ hr {
                 width: 40px;
                 height: 40px;
                 appearance: textfield;
-                border: 1 solid $color-red;
+                border: none;
                 border-radius: 7px;
                 font-size: 20px;
                 text-align: center;
+                border: 2px solid #818181;
             }
         }
 
@@ -281,15 +312,22 @@ hr {
             justify-content: center;
             align-items: center;
             cursor: pointer;
-
+            box-shadow: $box-shadow-red;
             border: none;
             transition: $transision-esein-out;
 
+            svg {
+                width: 22px;
+                margin-right: 8px;
+            }
+
             &:hover {
                 background-color: #741027;
+
             }
         }
     }
+
     /* End Pay Product */
 
     /* Start Amount Product */
@@ -301,11 +339,13 @@ hr {
         margin-top: 20px;
         background-color: #eaeaea;
         border-radius: 10px;
+        color: #222;
 
         span {
             margin: 0px 5px;
         }
     }
+
     /* End Amount Product */
 }
 
@@ -333,6 +373,7 @@ hr {
                 color: #fff;
                 cursor: pointer;
                 transition: $transision-esein-out;
+                box-shadow: $box-shadow-red;
 
                 &:hover {
                     background-color: #881732;
@@ -345,6 +386,7 @@ hr {
 .active-btn {
     background-color: #881732 !important;
 }
+
 /* End BTNs Description */
 
 /* Start Description */
@@ -361,6 +403,7 @@ hr {
     opacity: 0;
     transition: $transision-esein-out;
     transform: translateY(15px);
+    color: #333;
 
     h2 {
         margin-bottom: 10px;
@@ -381,6 +424,7 @@ hr {
         }
     }
 }
+
 /* End Description */
 
 /* Start Section Full Description */
@@ -618,6 +662,7 @@ hr {
     opacity: 1;
     transform: translateY(0px);
 }
+
 /* End Active Section */
 
 /* Start product-slider */
@@ -660,6 +705,7 @@ hr {
         display: flex;
     }
 }
+
 /* End product-slider */
 
 
@@ -777,4 +823,5 @@ hr {
         }
     }
 }
+
 /* End Card */

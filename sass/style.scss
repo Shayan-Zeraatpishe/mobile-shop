@@ -1013,8 +1013,17 @@ hr {
         justify-content: space-between;
 
         span {
-            color: #444;
+            color: #444444;
             font-size: 13px;
+            display: flex;
+            align-items: center;
+
+            svg{
+                width: 20px;
+                margin-left: 5px;
+                margin-top: -2px;
+            }
+
         }
     }
 

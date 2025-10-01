@@ -9,124 +9,181 @@
 
 .container-contact {
     display: flex;
-    padding: 30px;
     border-radius: 14px;
     box-shadow: $box-shadow-soft;
-    height: 450px;
+    height: 640px;
+    width: 900px;
 }
 
 .sec-right {
-    h4 {
-        color: $color-red;
-        margin-bottom: 14px;
-    }
+    width: 50%;
+    border-radius: 0px 14px 14px 0px;
+    padding: 20px;
 
-    h1 {
-        font-size: 23px;
-        margin-bottom: 10px;
-    }
+    /* Start Header */
+    header {
+        h1 {
+            font-size: 18px;
+            color: $color-red;
+            margin: 9px 0px;
+        }
 
-    p {
-        margin-bottom: 45px;
-        color: #666;
-        font-size: 14px;
-    }
+        h4 {
+            font-size: 22px;
+            color: #222;
+            margin: 9px 0px;
+        }
 
-    .cotact-option {
-        div {
-            display: flex;
-            box-shadow: $box-shadow-soft;
-            width: 220px;
-            height: 40px;
-            border-radius: 5px;
-            padding: 0px 20px;
-            justify-content: space-between;
-            align-items: center;
-            margin: 20px 0px;
+        p {
             font-size: 16px;
+            color: #666;
+            margin: 9px 0px;
+        }
+    }
 
-            svg {
-                width: 25px;
+    /* End Header */
+
+    .sec-cotact {
+        margin-top: 30px;
+
+        .sec-list {
+            box-shadow: $box-shadow-soft;
+            padding: 11px 30px;
+            margin: 14px 0px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            color: #222;
+        }
+    }
+
+    .sec-box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        .box-social {
+            height: 100px;
+            box-shadow: $box-shadow-soft;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-grow: 1;
+            margin: 0px 10px;
+
+            .icon {
+
+                svg {
+                    width: 50px;
+                }
+            }
+
+            h2 {
+                font-size: 14px;
             }
         }
     }
 }
 
 .sec-left {
-    margin-right: 70px;
+    width: 50%;
+    background-color: #eee;
+    background: url("/images/aboutus/company-mobile.png");
+    border-radius: 14px 0px 0px 14px;
+    padding: 20px;
 
-    .box-contact {
-        height: 100%;
+    header {
+        h2 {
+            color: #fff;
+            font-size: 18px;
+            margin: 9px 0px;
+        }
+    }
+
+    .container-inp {
+        margin-top: 10px;
+
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+
+    .sec-inp {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        background-color: #e8e8e8;
-        padding: 10px 30px;
-        border-radius: 10px;
+        font-size: 14px;
+        margin: 10px;
 
-        input {
-            display: flex;
-            width: 250px;
+        label {
+            margin-bottom: 7px;
+            color: #fff;
+        }
+
+        .text-danger {
+            font-size: 13px;
+            color: #a11b3b;
+            margin-top: 7px;
+        }
+
+        input[type="text"] {
             height: 40px;
-            border-radius: 7px;
-            padding: 0px 14px;
-            border: 2px solid #506080;
+            padding: 5px 10px;
             transition: $transision-esein-out;
-            margin: 10px 0px;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.375rem;
+            background-color: #ffffff7e;
 
             &:focus {
-                border: 2px solid $color-red;
+                border-color: $color-red;
+                outline: 0;
+                box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
+            }
+        }
+
+        .submit {
+            font-family: "shabnam";
+            background-color: $color-red;
+            color: #fff;
+            box-shadow: $box-shadow-red;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: $transision-esein-out;
+            height: 40px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 15px;
+
+            &:hover {
+                background-color: #a11b3b;
             }
         }
 
         textarea {
-            height: 100px;
-            min-height: 100px;
-            max-height: 100px;
-            min-width: 250px;
-            max-width: 250px;
-            border-radius: 7px;
-            font-family: "shabnam";
-            padding: 10px 14px;
-            border: none;
-            outline: none;
-            border: 2px solid #506080;
+            height: 90px;
+            min-height: 90px;
+            max-height: 90px;
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
+            padding: 5px 10px;
             transition: $transision-esein-out;
-            margin: 10px 0px;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.375rem;
+            background-color: #ffffff7e;
 
             &:focus {
-                border: 2px solid $color-red;
-            }
-        }
-
-        button {
-            width: 250px;
-            height: 40px;
-            background-color: $color-red;
-            color: #fff;
-            border: none;
-            border-radius: 7px;
-            font-family: "shabnam";
-            transition: $transision-esein-out;
-            margin: 10px 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            svg {
-                opacity: 0;
-                width: 20px;
-                transform: translateX(10px);
-                transition: $transision-esein-out;
-            }
-
-
-            &:hover {
-                background-color: #b72043;
-                svg{
-                    opacity: 1;
-                    transform: translateX(-10px);
-                }
+                border-color: $color-red;
+                outline: 0;
+                box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
             }
         }
     }
