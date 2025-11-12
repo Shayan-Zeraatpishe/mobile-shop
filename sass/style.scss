@@ -518,21 +518,26 @@ input[type=number] {
                 ul {
                     li {
                         border-bottom: 1px solid #eee;
+                        margin: 10px;
                         border-top: 1px solid #eee;
 
                         a {
-                            padding-right: 20px;
+                            padding: 0px 20px;
                             display: flex;
-                            justify-content: start;
+                            justify-content: space-between;
                             align-items: center;
                             color: #222;
-                            height: 45px;
+                            height: 50px;
                             font-size: 14px;
                             transition: $transision-esein-out;
 
                             &:hover {
                                 color: $color-red;
                             }
+                        }
+
+                        img {
+                            width: 44px;
                         }
                     }
                 }
@@ -1154,8 +1159,13 @@ input[type=number] {
 
     .discount-left {
         display: flex;
-        overflow-x: scroll;
+        overflow-x: auto;
         padding: 10px 0px;
+
+        user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        cursor: grab;
     }
 }
 
@@ -1165,6 +1175,7 @@ input[type=number] {
 /* Start Card */
 
 .card {
+    position: relative;
     background-color: #fff;
     border-radius: 10px;
     width: 210px;
@@ -1919,8 +1930,6 @@ footer {
     }
 
     /* End Footer */
-
-
 
 }
 

@@ -1,6 +1,6 @@
 @import "defult.scss";
 
-body{
+body {
     background-color: #f8f9fb;
 }
 
@@ -20,10 +20,42 @@ body{
     display: flex;
 }
 
+#over {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.242);
+    transition: $transision-esein-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.active-over {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.active-right {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateX(0px) !important;
+
+}
+
+.header-filter {
+    display: none;
+}
 
 .sec-right {
+    transition: $transision-esein-out;
     width: 20%;
 }
+
+
+
 
 .sec-left {
     width: 80%;
@@ -42,6 +74,19 @@ body{
     svg {
         width: 30px;
         margin-left: 10px;
+    }
+
+
+    .filter-shop {
+        display: none;
+    }
+
+    .order-mobile {
+        display: none;
+
+        select {
+            margin-right: 10px;
+        }
     }
 
     .order-by {
@@ -71,18 +116,20 @@ body{
 /* Start Header Shop */
 
 .shop-header {
-    margin: 20px 0px;
+    margin-top: 20px;
     margin-right: 20px;
+
     h1 {
         display: flex;
         font-size: 20px;
         color: #333;
-    }  
+    }
 
-    svg{    
+    svg {
         width: 30px;
         margin-right: 10px;
-        path{
+
+        path {
             fill: $color-red;
         }
     }
@@ -90,10 +137,7 @@ body{
 
 /* End Header Shop */
 
-
 .container-card {
-    margin-top: 10px;
-    background-color: rgba(255, 0, 0, 0.097);
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -105,7 +149,6 @@ body{
 .card {
     background-color: #fff;
     border-radius: 10px;
-    position: relative;
     width: 240px;
     height: 320px;
     padding: 10px;
@@ -113,9 +156,7 @@ body{
     margin: 20px 10px;
     transition: $transision-esein-out;
 
-
-
-    .card-special{
+    .card-special {
         position: absolute;
         height: 25px;
         width: 100px;
@@ -128,12 +169,11 @@ body{
         font-size: 14px;
         opacity: 0.9;
 
-        svg{
+        svg {
             width: 15px;
             margin-right: 5px;
         }
     }
-
 
     &:hover {
         background-color: #eeeded;
@@ -243,12 +283,12 @@ body{
             }
         }
 
-        .Not-available{
+        .Not-available {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
-            background-color:rgb(255, 80, 80);
+            background-color: rgb(255, 80, 80);
             color: #fff;
             padding: 10px 0px;
             border-radius: 7px;
@@ -261,8 +301,8 @@ body{
 hr {
     border: none;
     height: 1px;
-    background-color: #ccc;
-    margin: 20px 0;
+    background-color: #eee;
+    margin: 14px 0;
 }
 
 .sec-amount {
@@ -345,11 +385,11 @@ input[type=range]::-webkit-slider-thumb {
 /* End Progress Bar  */
 
 
-.sec-color {
+.sec-fiter {
     box-shadow: $box-shadow-hard;
     padding: 20px 10px;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 16px;
     background-color: #fff;
 
     select {
@@ -361,9 +401,144 @@ input[type=range]::-webkit-slider-thumb {
         font-family: "shabnam";
         border-color: #444;
         transition: $transision-esein-out;
-        
-        &:focus{
+
+        &:focus {
             border-color: $color-red;
         }
     }
 }
+
+
+/* Start Responsive */
+
+@media (max-width: 1200px) {
+    .sec-right {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(300px);
+        z-index: 10;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        padding: 10px;
+        background-color: #fff;
+        width: 280px !important;
+
+    }
+
+    .header-filter {
+        display: flex !important;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        h2 {
+            font-size: 14px;
+        }
+
+        .btn-close-filter {
+            background-color: transparent;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+
+            svg {
+                width: 20px;
+            }
+        }
+    }
+
+    .c-filter {
+        margin-top: 40px;
+    }
+
+    .sec-left {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+
+    .before-shop {
+        justify-content: space-between;
+    }
+
+    .filter-shop {
+        display: flex !important;
+        font-size: 13px;
+        align-items: center;
+
+        svg {
+            width: 20px;
+            margin-top: -2px;
+            margin-left: 5px;
+        }
+    }
+
+    .order-by {
+        display: none !important;
+    }
+
+    .order-mobile {
+        display: flex !important;
+        font-size: 13px;
+        align-items: center;
+
+        select {
+            margin-right: 10px;
+            font-family: "shabnam";
+            outline: none;
+            width: 120px;
+            height: 25px;
+            border-radius: 7px;
+
+        }
+    }
+
+    .container-card {
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+        place-items: center;
+    }
+
+    .card {
+        width: 180px;
+        height: 290px;
+        margin: 10px 0px;
+
+
+        .card-thumnail {
+
+            img {
+                width: 140px;
+            }
+        }
+
+        .card-body {
+
+            .card-title {
+
+                a {
+
+                    h2 {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .container-card {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 4px;
+    }
+
+    .card {
+        width: 160px;
+    }
+}
+
+/* End Responsive */

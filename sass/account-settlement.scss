@@ -1,5 +1,7 @@
 @import "defult.scss";
 
+
+/* Start Steps */
 .Steps {
     margin-top: 30px;
     display: flex;
@@ -70,6 +72,7 @@
     }
 }
 
+/* End Steps */
 
 .container-fluid {
     width: 100%;
@@ -117,7 +120,8 @@
         width: 100%;
     }
 
-    input , select {
+    input,
+    select {
         height: 40px;
         padding: 5px 10px;
         transition: $transision-esein-out;
@@ -209,3 +213,52 @@
         }
     }
 }
+
+
+/* Start Responsive */
+@media only screen and (max-width: 1000px) {
+
+    /* Start Steps */
+    .Steps {
+        .box {
+            margin: 0px 20px;
+
+            .img {
+                width: 30px;
+                height: 30px;
+
+                svg {
+                    width: 20px;
+                }
+            }
+
+            .arrow-left {
+
+                &::after {
+                    width: 130px;
+                }
+            }
+
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    /* End Steps */
+
+    .container-fluid {
+        flex-direction: column;
+    }
+
+    .sec-right {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .sec-left {
+        width: 100%;
+    }
+}
+
+/* End Responsive */

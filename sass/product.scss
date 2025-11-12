@@ -519,8 +519,8 @@ hr {
     transition: $transision-esein-out;
     transform: translateY(15px);
 
-    header {
-        margin-bottom: 25px;
+    .header-main {
+        margin-bottom: 20px;
 
         h3 {
             display: flex;
@@ -535,12 +535,12 @@ hr {
         p {
             margin-top: 7px;
             color: #555;
-            font-size: 14px;
+            font-size: 13px;
         }
     }
 
     label {
-        font-size: 14px;
+        font-size: 13px;
         margin-bottom: 7px;
         color: #444;
     }
@@ -551,7 +551,7 @@ hr {
         margin-bottom: 25px;
 
         textarea {
-            border-radius: 10px;
+            border-radius: 12px;
             width: 100%;
             min-width: 100%;
             max-width: 100%;
@@ -589,7 +589,7 @@ hr {
 
         input {
             padding: 7px 10px;
-            border-radius: 8px;
+            border-radius: 10px;
             font-size: 14px;
             outline: none;
             border: 2px solid $color-secendary;
@@ -611,6 +611,7 @@ hr {
             background-color: $color-red;
             color: #fff;
             transition: $transision-esein-out;
+            box-shadow: $box-shadow-red;
             cursor: pointer;
 
             &:hover {
@@ -625,6 +626,17 @@ hr {
         border-radius: 10px;
         border: 1px solid $color-secendary;
 
+        .reply {
+            margin-right: 20px !important;
+            background-color: #ffffff !important;
+
+            .usernamerep {
+                margin-right: 20px;
+                background-color: $color-skyblue;
+                border-radius: 6px;
+                padding: 2px 4px;
+            }
+        }
 
         .container-comment {
             background-color: #ebeaea;
@@ -635,6 +647,7 @@ hr {
             .header-comment {
                 display: flex;
                 align-items: center;
+                margin-bottom: 10px;
 
                 img {
                     margin-left: 10px;
@@ -648,7 +661,7 @@ hr {
             }
 
             .body-comment {
-                font-size: 14px;
+                font-size: 13px;
             }
         }
     }
@@ -825,3 +838,177 @@ hr {
 }
 
 /* End Card */
+
+
+
+@media (max-width: 1200px) {
+    .product-1 {
+        flex-direction: column;
+    }
+
+    .sec-right {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+
+        .container-img {
+            display: flex;
+            justify-content: center;
+        }
+
+        .body-product {
+            margin-right: 0px;
+
+
+            header {
+                margin-top: 10px;
+
+                h1 {
+                    font-size: 16px;
+                }
+
+                h4 {
+                    font-size: 12px;
+                }
+            }
+
+            .header-details {
+                margin: 10px 30px;
+            }
+
+            .advanced-details {
+                margin-top: 12px;
+                flex-direction: column;
+
+                div {
+                    margin: 5px 0px;
+                    margin-right: 20px !important;
+
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-btn {
+        li {
+            margin: 0px 4px !important;
+            font-size: 12px;
+        }
+    }
+
+    .sec-left {
+        padding: 10px;
+        width: 100%;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    .container-full-description {
+        padding: 8px !important;
+
+        .property-item {
+            p {
+                margin: 5px 5px !important;
+                font-size: 12px;
+            }
+
+            span {
+                font-size: 12px;
+                width: 220px;
+            }
+        }
+    }
+
+    .container-fluid {
+        margin-top: 20px;
+
+    }
+
+    .container-description {
+        padding: 8px;
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .breadcrumb-Container {
+        margin: 20px 0px;
+    }
+
+    /* Start Comment */
+    .comment {
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 100%;
+
+        .header-main {
+
+            h3 {
+
+                svg {
+                    width: 20px;
+                }
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        label {
+            font-size: 12px;
+        }
+
+        .col-2 {
+            flex-direction: column;
+
+            .row-1 {
+                width: 100%;
+                margin-left: 0px;
+
+            }
+
+            .row-2 {
+                width: 100%;
+                margin-top: 15px;
+            }
+        }
+
+        .col-4 {
+            margin: 10px 0px;
+            padding: 5px;
+
+            .reply {
+                margin-right: 6px !important;
+            }
+
+            .container-comment {
+                padding: 5px;
+
+
+                .header-comment {
+
+                    img {
+                        width: 20px;
+                    }
+
+                    span {
+                        font-size: 12px;
+                    }
+                }
+
+                .body-comment {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    /* End Comment */
+
+}

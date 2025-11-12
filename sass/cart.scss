@@ -14,6 +14,7 @@ input[type=number] {
 
 /* End Remove spin input Number */
 
+/* Start Steps */
 .Steps {
     margin-top: 30px;
     display: flex;
@@ -69,6 +70,7 @@ input[type=number] {
         }
     }
 }
+/* End Steps */
 
 
 .container-fluid {
@@ -214,6 +216,11 @@ input[type=number] {
             justify-content: center;
             border-radius: 7px;
             cursor: pointer;
+            transition: $transision-esein-out;
+
+            &:hover {
+                background-color: #bcbcbc;
+            }
         }
     }
 }
@@ -221,6 +228,7 @@ input[type=number] {
 /* End Card */
 
 
+/* Start Box Details */
 .box-details {
     box-shadow: $box-shadow-hard;
     padding: 20px;
@@ -307,9 +315,148 @@ input[type=number] {
         font-family: "shabnam";
         font-size: 15px;
         transition: $transision-esein-out;
+        box-shadow: $box-shadow-red;
 
         &:hover {
             background-color: #a51d3c;
         }
     }
 }
+
+/* End Box Details */
+
+
+/* Start container-dsicount */
+
+.container-dsicount {
+    width: 75%;
+    border: 1px solid #eee;
+    margin-top: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+
+    .box-discount {
+        display: flex;
+    }
+
+    input {
+        outline: none;
+        width: 250px;
+        padding: 10px;
+        height: 40px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        margin-left: 20px;
+        transition: $transision-esein-out;
+
+        &:focus {
+            border: 1px solid $color-red;
+        }
+    }
+
+    .apply-discount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 100px;
+        border-radius: 10px;
+        border: none;
+        background-color: $color-red;
+        color: #fff;
+        font-family: "shabnam";
+        font-size: 13px;
+        transition: $transision-esein-out;
+        box-shadow: $box-shadow-red;
+
+        &:hover {
+            background-color: #a51d3c;
+        }
+    }
+
+    .update {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 120px;
+        border-radius: 10px;
+        border: none;
+        background-color: $color-red;
+        color: #fff;
+        font-family: "shabnam";
+        font-size: 13px;
+        transition: $transision-esein-out;
+        box-shadow: $box-shadow-red;
+
+        &:hover {
+            background-color: #a51d3c;
+        }
+    }
+
+
+}
+
+/* End container-dsicount */
+
+
+/* Start Responsive */
+@media only screen and (max-width: 1000px) {
+
+    /* Start Steps */
+    .Steps {
+        .box {
+            margin: 0px 20px;
+
+            .img {
+                width: 30px;
+                height: 30px;
+
+                svg {
+                    width: 20px;
+                }
+            }
+
+            .arrow-left {
+
+                &::after {
+                    width: 130px;
+                }
+            }
+
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    /* End Steps */
+
+    .container-fluid {
+        flex-direction: column;
+    }
+
+    .sec-right {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .sec-left {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .container-dsicount {
+        flex-direction: column;
+        // align-items: center;
+        width: 100%;
+
+        .box-discount {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/* End Responsive */
