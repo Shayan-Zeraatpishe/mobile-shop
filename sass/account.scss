@@ -6,13 +6,57 @@
 
 }
 
+/* Start Responsive for mobile  */
+#over {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.242);
+    transition: $transision-esein-out;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+}
+
+.active-over {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+#btnmenu {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    border: none;
+    cursor: pointer;
+    box-shadow: $box-shadow-soft;
+    border-radius: 10px;
+    display: none;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    z-index: 9;
+
+    svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/* End Responsive for mobile  */
+
 .header-account {
     margin-right: 15px;
 
     h1 {
         font-size: 20px;
         position: relative;
-
 
         &::after {
             position: absolute;
@@ -43,6 +87,12 @@
 .accordion-right {
     width: 260px;
     box-shadow: $box-shadow-hard;
+    margin: 10px;
+    border-radius: 10px;
+    z-index: 10;
+    transition: $transision-esein-out;
+    background-color: #fff;
+    z-index: 99;
 
     ul {
         display: flex;
@@ -58,16 +108,26 @@
                 height: 55px;
                 width: 200px;
                 align-items: center;
-                padding-right: 20px;
+                padding: 0px 15px;
                 box-shadow: $box-shadow-soft;
                 border-radius: 7px;
                 font-size: 14px;
                 transition: $transision-esein-out;
+                justify-content: space-between;
+
+                svg {
+                    width: 25px;
+                    transition: $transision-esein-out;
+                }
 
                 &:hover {
                     color: #fff;
                     background-color: $color-red;
                     transform: translateX(-5px);
+
+                    svg {
+                        fill: #fff;
+                    }
                 }
             }
         }
@@ -87,11 +147,9 @@
 .container-inp {
     margin-top: 30px;
     align-self: center;
-    border: 2px solid #dfdfdf;
-    width: 800px;
+    width: 100%;
     padding: 20px 10px;
     border-radius: 14px;
-    box-shadow: $box-shadow-soft;
 
     .inp-group {
         display: flex;
@@ -200,6 +258,7 @@ td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: right;
+    min-width: 150px;
 }
 
 th {
@@ -247,8 +306,8 @@ th {
     }
 }
 
-.p-3{
-    span{
+.p-3 {
+    span {
         padding: 0px 2px;
     }
 }
@@ -258,10 +317,11 @@ th {
     background-color: #eee;
     overflow-y: scroll;
     overflow-x: auto;
-    height: 600px;
+    height: 80vh;
     background-color: #eee;
     padding: 10px;
     border-radius: 7px;
+
 }
 
 .d-flex {
@@ -273,6 +333,38 @@ th {
     text-align: center;
     width: 250px;
 }
+
+.container-orders {
+    display: none;
+    transform: translateY(-20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: $transision-esein-out;
+}
+
+
+.container-edit-account {
+    display: none;
+    transform: translateY(-20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: $transision-esein-out;
+}
+
+.active-orders {
+    display: flex !important;
+    transform: translateY(0px);
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.active-details-account {
+    display: block !important;
+    transform: translateY(0px);
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
 
 /* Start Pagging */
 .pagging {
@@ -321,3 +413,56 @@ th {
 }
 
 /* End Pagging */
+
+
+/* Start Responsive */
+@media (max-width: 900px) {
+
+    .right-sec {
+        margin: 0px !important;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    .accordion-right {
+        position: absolute;
+        transform: translate(300px);
+        visibility: hidden;
+        opacity: 0;
+        top: 0px;
+        bottom: 0px;
+        width: 220px;
+    }
+
+    .accordion-right-active {
+        transform: translate(0px) !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    #btnmenu {
+        display: flex;
+    }
+
+
+
+
+
+    .container-inp {
+        margin-top: 0px;
+        // align-self: center;
+        border: none;
+        width: 100%;
+        padding: 20px 10px;
+        border-radius: 0px;
+        box-shadow: none;
+
+        .inp-group {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
+
+/* End Responsive */

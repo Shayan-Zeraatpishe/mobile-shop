@@ -7,7 +7,6 @@ toggleButtonCart.addEventListener('click', function () {
 });
 
 
-
 /* Open-close navbar */
 const containerdark = document.getElementById('container-dark');
 const btnmenu = document.getElementById('btnmenu');
@@ -16,11 +15,13 @@ const navbar = document.getElementById('navbar');
 btnmenu.addEventListener('click', function () {
     containerdark.classList.toggle('active-dark');
     navbar.classList.toggle('active-navbar');
+    document.body.classList.add('no-scroll');
 });
 
 containerdark.addEventListener('click', function () {
     navbar.classList.toggle('active-navbar');
     containerdark.classList.remove('active-dark');
+    document.body.classList.remove('no-scroll');
 });
 
 
@@ -44,11 +45,29 @@ const containersearch = document.querySelector('.container-serach');
 const closecontainersearch = document.getElementById('closecontainersearch');
 btnsearch.addEventListener('click', function () {
     containersearch.classList.add("container-serach-show");
+    document.body.classList.add('no-scroll');
 });
 
 closecontainersearch.addEventListener('click' , function(){
     containersearch.classList.remove("container-serach-show");
+     document.body.classList.remove('no-scroll');
+    
 });
+
+
+
+
+const searchajax = document.getElementById('searchajax');
+const boxresultsearch = document.getElementById('boxresultsearch');
+
+searchajax.addEventListener('focus' , function(){
+    boxresultsearch.classList.add('box-result-search-active');
+});
+
+searchajax.addEventListener('blur' , function(){
+    boxresultsearch.classList.remove('box-result-search-active');
+});
+
 
 
 

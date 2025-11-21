@@ -1,5 +1,7 @@
 @import "defult.scss";
 
+
+/* Start Header */
 .container-header {
     background:
         linear-gradient(#0d0505c0, #0d050578),
@@ -22,10 +24,18 @@
     }
 }
 
+/* End Header */
+
+/* Start Ability */
+
 .box-ability {
     margin: 30px 0px;
     display: flex;
     justify-content: center;
+
+    .sec-box {
+        display: flex;
+    }
 
     .box-1 {
         box-shadow: $box-shadow-hard;
@@ -54,12 +64,14 @@
     }
 }
 
+/* End Ability */
+
 .container-about {
     margin: 50px 0px;
     position: relative;
     display: flex;
     justify-content: center;
-    
+
     img {
         position: absolute;
         width: 250px;
@@ -81,3 +93,82 @@
         margin-top: 20px;
     }
 }
+
+
+/* Start Resposive */
+
+@media screen and (max-width:1300px) {
+
+    .container-about {
+        img {
+            display: none;
+        }
+    }
+
+    .aboutus {
+        padding: 20px 60px !important;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+
+    .box-ability {
+
+        .box-1 {
+            width: 140px;
+            height: 200px;
+            margin: 0px 14px;
+
+            h4 {
+                font-size: 13px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            img {
+                width: 40px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .aboutus {
+        width: 90%;
+        padding: 10px 20px !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .container-header {
+
+        height: 200px;
+
+        .content {
+
+            .header {
+                padding: 0px 15px;
+            }
+
+            .p {
+                text-align: justify;
+                padding: 0px 15px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .box-ability {
+
+        .box-1 {
+            margin: 0px 5px;
+        }
+    }
+}
+
+/* End Resposive */

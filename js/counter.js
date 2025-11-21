@@ -1,4 +1,3 @@
-
 const input = document.getElementById("counter");
 const plus = document.querySelector(".plus");
 const minus = document.querySelector(".minus");
